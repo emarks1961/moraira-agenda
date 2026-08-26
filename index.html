@@ -20,8 +20,8 @@
     .hero{background:var(--brand);color:#000;padding:28px 20px 26px;border-bottom:1px solid rgba(0,0,0,.12)}
     .hero-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
     .hero-copy{min-width:0}
-    .villa-logo-link{display:block;flex:0 0 auto;line-height:0}
-    .villa-logo{display:block;width:min(260px,32vw);height:auto;max-height:118px;object-fit:contain;border-radius:999px}
+    .villa-logo-link{display:block;flex:0 0 auto;line-height:0;background:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+    .villa-logo{display:block;width:min(240px,30vw);height:auto;max-height:96px;object-fit:contain;border-radius:999px}
 
     .wrap{max-width:1100px;margin:0 auto}
     h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px;letter-spacing:-.02em}
@@ -53,7 +53,7 @@
     .footer{padding:0 20px 35px;text-align:center;color:var(--muted);font-size:13px}
     .active-filter-count{font-weight:800;color:#000}
     @media(max-width:850px){.filter-grid{grid-template-columns:1fr 1fr}.searchgroup{grid-column:1/-1}.grid{grid-template-columns:1fr}}
-    @media(max-width:560px){.filter-grid{grid-template-columns:1fr}.searchgroup{grid-column:auto}.searchbar{flex-direction:column;align-items:stretch}.hero{padding-top:22px}.hero-inner{align-items:flex-start}.villa-logo{width:150px;max-height:76px}.meta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.filter-grid{grid-template-columns:1fr}.searchgroup{grid-column:auto}.searchbar{flex-direction:column;align-items:stretch}.hero{padding-top:22px}.hero-inner{align-items:flex-start}.villa-logo-link{padding:8px 12px}.villa-logo{width:150px;max-height:70px}.meta{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -61,7 +61,7 @@
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <h1>Moraira & omgeving</h1>
-        <p class="lead">Activiteiten, muziek, fiestas, gastronomie, cultuur en meer</p>
+        <p class="lead">deze evenementen-agenda wordt je aangeboden door Villa Herrera · <a href="https://www.villaherrera.nl/" target="_blank" rel="noopener" style="color:#000;font-weight:800;text-decoration:underline;text-underline-offset:3px">Lees meer over Villa Herrera</a></p>
       </div>
       <a class="villa-logo-link" href="https://www.villaherrera.nl/" target="_blank" rel="noopener" aria-label="Villa Herrera">
         <img class="villa-logo" src="villa-herrera.webp" alt="Villa Herrera">
