@@ -3,7 +3,8 @@ name: Update Moraira calendar
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 6 * * 3"  # woensdag 08:15 Europe/Madrid in zomertijd; GitHub gebruikt UTC
+    - cron: "15 8 * * 3"
+      timezone: "Europe/Madrid"
 
 permissions:
   contents: write
