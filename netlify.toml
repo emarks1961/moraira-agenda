@@ -1,0 +1,7 @@
+[[headers]]
+  for = "/moraira.ics"
+  [headers.values]
+    Content-Type = "text/calendar; charset=utf-8"
+    Content-Disposition = "inline; filename=moraira.ics"
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Access-Control-Allow-Origin = "*"
