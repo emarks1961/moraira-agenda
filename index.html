@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moraira & omgeving – Agenda</title>
+  <style>
+    :root{
+      --brand:#d2a83e;
+      --brand-soft:#ead9a7;
+      --bg:#f7f3e8;
+      --card:#fffdf8;
+      --text:#000;
+      --muted:#5c5545;
+      --line:#d8ccb0;
+      --shadow:0 8px 28px rgba(0,0,0,.08)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .hero{background:var(--brand);color:#000;padding:28px 20px 26px;border-bottom:1px solid rgba(0,0,0,.12)}
+    .hero-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .hero-copy{min-width:0}
+    .villa-logo-link{display:block;flex:0 0 auto;line-height:0}
+    .villa-logo{display:block;width:min(260px,32vw);height:auto;max-height:118px;object-fit:contain;border-radius:999px}
+
+    .wrap{max-width:1100px;margin:0 auto}
+    h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px;letter-spacing:-.02em}
+    .lead{margin:0;font-size:17px}
+    .panel{margin:-18px auto 24px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .filter-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
+    .searchbar{display:flex;gap:10px;align-items:end;margin-bottom:16px}
+    .searchbar>div:first-child{flex:1}
+    label.group-label{font-size:12px;font-weight:800;color:var(--muted);display:block;margin:0 0 7px;text-transform:uppercase;letter-spacing:.05em}
+    input[type=search]{width:100%;font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 12px;background:white;color:var(--text)}
+    button{font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 14px;background:var(--brand);color:#000;font-weight:800;cursor:pointer}
+    button:hover{filter:brightness(.97)}
+    .checkgroup{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}
+    .checks{display:grid;grid-template-columns:1fr;gap:7px;max-height:190px;overflow:auto;padding-right:4px}
+    .check{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
+    .check input{width:18px;height:18px;accent-color:var(--brand);cursor:pointer}
+    .quick{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+    .quick button{padding:7px 10px;background:#fff;border-color:var(--line);font-size:12px}
+    .meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:0 0 14px;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-bottom:40px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 3px 14px rgba(0,0,0,.04)}
+    .date{font-size:13px;font-weight:900;color:#000}
+    .title{font-size:19px;line-height:1.25;margin:5px 0 10px;font-weight:900}
+    .badge{display:inline-block;font-size:12px;font-weight:800;background:var(--brand-soft);color:#000;border-radius:999px;padding:5px 8px;margin:0 6px 6px 0}
+    .location{font-size:14px;color:var(--muted);margin:4px 0 10px}
+    .details{font-size:14px;line-height:1.45;color:#29251d;white-space:pre-line;max-height:88px;overflow:hidden}
+    .more{margin-top:12px;display:inline-block;color:#000;font-weight:900;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+    .empty,.error{background:white;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}
+    .footer{padding:0 20px 35px;text-align:center;color:var(--muted);font-size:13px}
+    .active-filter-count{font-weight:800;color:#000}
+    @media(max-width:850px){.filter-grid{grid-template-columns:1fr 1fr}.searchgroup{grid-column:1/-1}.grid{grid-template-columns:1fr}}
+    @media(max-width:560px){.filter-grid{grid-template-columns:1fr}.searchgroup{grid-column:auto}.searchbar{flex-direction:column;align-items:stretch}.hero{padding-top:22px}.hero-inner{align-items:flex-start}.villa-logo{width:150px;max-height:76px}.meta{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>Moraira & omgeving</h1>
+        <p class="lead">Activiteiten, muziek, fiestas, gastronomie, cultuur en meer</p>
+      </div>
+      <a class="villa-logo-link" href="https://www.villaherrera.nl/" target="_blank" rel="noopener" aria-label="Villa Herrera">
+        <img class="villa-logo" src="villa-herrera.webp" alt="Villa Herrera">
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding:0 16px">
+    <section class="panel" aria-label="Filters">
+      <div class="searchbar">
+        <div>
+          <label class="group-label" for="q">Zoeken</label>
+          <input id="q" type="search" placeholder="Bijv. tribute, fiesta, wijn…" />
+        </div>
+        <button id="reset">Wis alle filters</button>
+      </div>
+
+      <div class="filter-grid">
+        <div class="checkgroup searchgroup">
+          <label class="group-label">Periode</label>
+          <div class="checks" id="periodChecks">
+            <label class="check"><input type="checkbox" name="period" value="7"> Komende 7 dagen</label>
+            <label class="check"><input type="checkbox" name="period" value="30"> Komende 30 dagen</label>
+            <label class="check"><input type="checkbox" name="period" value="90"> Komende 3 maanden</label>
+          </div>
+          <div class="quick">
+            <button type="button" data-period="7">Deze week</button>
+            <button type="button" data-period="30">Deze maand</button>
+            <button type="button" data-period="">Alles</button>
+          </div>
+        </div>
+
+        <div class="checkgroup">
+          <label class="group-label">Locatie</label>
+          <div class="checks" id="locationChecks"></div>
+          <div class="quick">
+            <button type="button" data-checkall="location">Alles aan</button>
+            <button type="button" data-uncheckall="location">Alles uit</button>
+          </div>
+        </div>
+
+        <div class="checkgroup">
+          <label class="group-label">Type activiteit</label>
+          <div class="checks" id="typeChecks"></div>
+          <div class="quick">
+            <button type="button" data-checkall="type">Alles aan</button>
+            <button type="button" data-uncheckall="type">Alles uit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="meta">
+      <span id="count">Agenda laden…</span>
+      <span id="activeFilters" class="active-filter-count"></span>
+    </div>
+    <section id="events" class="grid"></section>
+  </main>
+
+  <footer class="footer">Moraira & omgeving – automatisch gegenereerde activiteitenagenda</footer>
+
+<script>
+const ICS_URL='./moraira.ics';
+let allEvents=[];
+
+function unfoldICS(text){return text.replace(/\r?\n[ \t]/g,'')}
+function unescapeICS(s=''){return s.replace(/\\n/gi,'\n').replace(/\\,/g,',').replace(/\\;/g,';').replace(/\\\\/g,'\\').trim()}
+function prop(block,name){const re=new RegExp('^'+name+'(?:;[^:]*)?:(.*)$','mi');const m=block.match(re);return m?unescapeICS(m[1]):''}
+function parseDate(value){
+  if(!value)return null;const v=value.trim();
+  if(/^\d{8}$/.test(v))return new Date(+v.slice(0,4),+v.slice(4,6)-1,+v.slice(6,8));
+  const m=v.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z?$/);if(!m)return null;
+  return new Date(+m[1],+m[2]-1,+m[3],+m[4],+m[5],+m[6]);
+}
+function deriveCategory(e){
+  const cat=e.categoryRaw||(e.description.match(/(?:Categorie|Rubriek):\s*([^\n]+)/i)||[])[1]||'';
+  if(cat)return cat.trim();
+  const s=(e.summary+' '+e.description).toLowerCase();
+  if(/[🎵]|concert|music|muziek|tribute|dj|orquesta/.test(s))return'Muziek';
+  if(/[🎉]|fiesta|festes|traditie|moros|cristianos/.test(s))return'Fiesta & traditie';
+  if(/[🍷]|gastr|wine|vino|moscat|gourmet|tapa/.test(s))return'Gastronomie & wijn';
+  if(/[🛍️]|mercado|market|markt|feria|fira/.test(s))return'Markt & winkelen';
+  if(/[🎭]|expos|culture|cultuur|teatro|cine|art/.test(s))return'Kunst & cultuur';
+  if(/[🏃]|sport|race|regata|carrera|trail/.test(s))return'Sport & buiten';
+  return'Overig';
+}
+function derivePlace(location=''){
+  const s=location.toLowerCase();
+  if(s.includes('moraira'))return'Moraira';
+  if(s.includes('teulada'))return'Teulada';
+  if(s.includes('benissa'))return'Benissa';
+  if(s.includes('benitatxell')||s.includes('poble nou'))return'Benitatxell';
+  if(s.includes('xàbia')||s.includes('xabia')||s.includes('jávea')||s.includes('javea'))return'Xàbia';
+  if(s.includes('calp')||s.includes('calpe'))return'Calp';
+  return location?location.split(',').pop().trim():'Onbekend';
+}
+function parseICS(text){
+  const u=unfoldICS(text);
+  return[...u.matchAll(/BEGIN:VEVENT([\s\S]*?)END:VEVENT/g)].map(m=>{
+    const b=m[1],summary=prop(b,'SUMMARY'),description=prop(b,'DESCRIPTION'),location=prop(b,'LOCATION');
+    const e={summary,description,location,url:prop(b,'URL'),categoryRaw:prop(b,'CATEGORIES'),start:parseDate(prop(b,'DTSTART')),end:parseDate(prop(b,'DTEND'))};
+    e.category=deriveCategory(e);e.place=derivePlace(location);return e;
+  }).filter(e=>e.start).sort((a,b)=>a.start-b.start);
+}
+function safeText(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function fmtDate(d){return new Intl.DateTimeFormat('nl-NL',{weekday:'short',day:'numeric',month:'short',year:'numeric'}).format(d)}
+function fmtTime(d){return new Intl.DateTimeFormat('nl-NL',{hour:'2-digit',minute:'2-digit'}).format(d)}
+function dateLabel(e){
+  const s=fmtDate(e.start),hasTime=e.start.getHours()||e.start.getMinutes();
+  if(e.end&&e.end.toDateString()!==e.start.toDateString())return`${s}${hasTime?' · '+fmtTime(e.start):''} – ${fmtDate(e.end)}`;
+  return`${s}${hasTime?' · '+fmtTime(e.start):''}`;
+}
+function cleanDescription(s){return s.replace(/(?:Categorie|Rubriek):[^\n]*\n?/gi,'').replace(/Bron:\s*https?:\/\/\S+\n?/gi,'').replace(/Meer informatie:\s*https?:\/\/\S+/gi,'').trim()}
+function selectedValues(name){return[...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value)}
+function addCheckboxes(containerId,name,values){
+  const el=document.getElementById(containerId);
+  el.innerHTML=values.sort().map(v=>`<label class="check"><input type="checkbox" name="${name}" value="${safeText(v)}" checked> ${safeText(v)}</label>`).join('');
+}
+function populateFilters(){
+  addCheckboxes('locationChecks','location',[...new Set(allEvents.map(e=>e.place))]);
+  addCheckboxes('typeChecks','type',[...new Set(allEvents.map(e=>e.category))]);
+  document.querySelectorAll('input[type=checkbox]').forEach(x=>x.addEventListener('change',render));
+}
+function activePeriod(){
+  const vals=selectedValues('period').map(Number).filter(Boolean);
+  return vals.length?Math.min(...vals):null;
+}
+function render(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  const locs=selectedValues('location'),types=selectedValues('type'),period=activePeriod();
+  const now=new Date();now.setHours(0,0,0,0);
+  let maxDate=null;if(period){maxDate=new Date(now);maxDate.setDate(maxDate.getDate()+period)}
+  const filtered=allEvents.filter(e=>e.start>=new Date(now.getTime()-86400000)).filter(e=>{
+    const hay=(e.summary+' '+e.description+' '+e.location).toLowerCase();
+    return(!q||hay.includes(q))
+      &&(!locs.length||locs.includes(e.place))
+      &&(!types.length||types.includes(e.category))
+      &&(!maxDate||e.start<=maxDate);
+  });
+  document.getElementById('count').textContent=`${filtered.length} komende ${filtered.length===1?'activiteit':'activiteiten'}`;
+  const n=(q?1:0)+(period?1:0)+((locs.length&&locs.length<document.querySelectorAll('input[name=location]').length)?1:0)+((types.length&&types.length<document.querySelectorAll('input[name=type]').length)?1:0);
+  document.getElementById('activeFilters').textContent=n?`${n} actief ${n===1?'filter':'filters'}`:'';
+  const el=document.getElementById('events');
+  if(!filtered.length){el.innerHTML='<div class="empty">Geen activiteiten gevonden met deze filters.</div>';return}
+  el.innerHTML=filtered.map(e=>{
+    const desc=cleanDescription(e.description);
+    return`<article class="card"><div class="date">${safeText(dateLabel(e))}</div><div class="title">${safeText(e.summary)}</div><div><span class="badge">${safeText(e.category)}</span><span class="badge">${safeText(e.place)}</span></div><div class="location">📍 ${safeText(e.location||e.place)}</div>${desc?`<div class="details">${safeText(desc)}</div>`:''}${e.url?`<a class="more" href="${safeText(e.url)}" target="_blank" rel="noopener">Meer informatie →</a>`:''}</article>`;
+  }).join('');
+}
+function setAll(name,state){document.querySelectorAll(`input[name="${name}"]`).forEach(x=>x.checked=state);render()}
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('reset').addEventListener('click',()=>{
+  document.getElementById('q').value='';
+  document.querySelectorAll('input[name=location],input[name=type]').forEach(x=>x.checked=true);
+  document.querySelectorAll('input[name=period]').forEach(x=>x.checked=false);
+  render();
+});
+document.addEventListener('click',e=>{
+  if(e.target.dataset.checkall)setAll(e.target.dataset.checkall,true);
+  if(e.target.dataset.uncheckall)setAll(e.target.dataset.uncheckall,false);
+  if('period' in e.target.dataset){
+    document.querySelectorAll('input[name=period]').forEach(x=>x.checked=false);
+    if(e.target.dataset.period){
+      const cb=document.querySelector(`input[name=period][value="${e.target.dataset.period}"]`);if(cb)cb.checked=true;
+    }
+    render();
+  }
+});
+async function init(){
+  try{
+    const r=await fetch(ICS_URL+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+    allEvents=parseICS(await r.text());populateFilters();render();
+  }catch(err){
+    document.getElementById('count').textContent='Kon agenda niet laden';
+    document.getElementById('events').innerHTML='<div class="error">De agenda kon niet worden geladen. Controleer of <strong>moraira.ics</strong> naast deze pagina staat.</div>';
+    console.error(err);
+  }
+}
+init();
+</script>
+</body>
+</html>
