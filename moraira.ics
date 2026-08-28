@@ -11,12 +11,12 @@ SUMMARY:Presentación del libro: Fuera de tiempo y lugar de Eduardo Bellve
  r Alberola
 DTSTART;TZID=Europe/Madrid:20261001T000000
 DTEND;TZID=Europe/Madrid:20261001T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:016c7cdc9e8ac3c071091a0970900da0158ae81d@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Concert La Rondalla de Gata de Gorgos
@@ -40,18 +40,18 @@ UID:0f9cba4f9d00f0772a63a7ea8f425aaf61f663f1@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎉 "Festa de l'Escaldà" · Xàbia
 DTSTART;TZID=Europe/Madrid:20260920T000000
 DTEND;TZID=Europe/Madrid:20260920T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:1015c298e6f3b3e4445efd7e461ce429c8f3c330@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Proud Tina (Tina Turner)
@@ -62,19 +62,19 @@ UID:1038ff84a0a7f74fda175e73d302e8e91d23f765@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sesión Club de Lectura en Valencià: El llibre de meravelles de V
  icent Andrés Estellés
 DTSTART;TZID=Europe/Madrid:20260921T000000
 DTEND;TZID=Europe/Madrid:20260921T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:117963f360c559274082869d12a8964435149f4b@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎧 Tardeo Penyeta Roja – DJ's
@@ -98,7 +98,7 @@ UID:16ab0d47e701e20f7992f6a0143e6d3d058f71a2@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⛵ 13e Gourmet Race
@@ -109,8 +109,8 @@ UID:173bd0c5ea58ccadda4b03995a21ed71bbc484a4@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Club Náutico Moraira\, Moraira
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Coldplay Tribute
@@ -121,31 +121,31 @@ UID:177eb159af1d5fcbb87b0bf6c7b4894c7cfb9748@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🍇 Fiesta del Moscatel
 DTSTART;VALUE=DATE:20260829
-DTEND;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
 DTSTAMP:20260826T100737Z
 UID:1954e1df6df5c2d945ea25a6cefd688e5b0a4db1@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Teulada – Riurau\, Ctra. Benimarco / Av. Las Palmas
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎶 Divina Pastora & Cantada a la Fresca
 DTSTART;VALUE=DATE:20260918
-DTEND;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
 DTSTAMP:20260826T100737Z
 UID:1d3230985d55ba53d3b0534b827efb87058b6b92@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Plaza de la Iglesia\, Teulada
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Kool & The Gang Tribute
@@ -156,7 +156,7 @@ UID:251755b8b20520e402f13bf37b50a23b853f8445@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Katy Perry Tribute
@@ -167,7 +167,7 @@ UID:25c786a12a8986a4fc5140968f79d8d46a5b2a93@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🚶 Atardeceres con historia – rondleiding (Spaans)
@@ -178,30 +178,30 @@ UID:28413485f94a04d8cceb18262e5df730278cf238@moraira-calendar
 CATEGORIES:Natuur & rondleiding
 LOCATION:Plaça Rei Jaume I\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/de/agenda/
+URL:https://www.benissa.es/nl/agenda/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Nit d’Estellés i de la Poesia: recital de poemes i sopar de cab
  asset
 DTSTART;TZID=Europe/Madrid:20260918T000000
 DTEND;TZID=Europe/Madrid:20260918T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:29b81fe8aed9eb53a742461aaa4e49ef1ae2b693@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🌙 Maanlichtwandeling Paseo Ecológico
 DTSTART;VALUE=DATE:20260828
-DTEND;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
 DTSTAMP:20260826T100737Z
 UID:2cb6a00c7fd47c88f8e8237f95348e7cb7deae46@moraira-calendar
 CATEGORIES:Natuur & rondleiding
 LOCATION:Playa La Fustera\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/en/categoria-agenda/eventos-en/
+URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Tribute to Nino Bravo
@@ -212,7 +212,7 @@ UID:2d561a4542d10cca7ebeede502eca5020388b8c6@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Centre d'Art Taller Ivars\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/de/agenda/
+URL:https://www.benissa.es/nl/agenda/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Depeche Mode Tribute
@@ -223,19 +223,19 @@ UID:2e6c4637b37fd823a965f2ba97f08c1b57c6b7da@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Presentación del libro: Historia del fútbol. Club Deportivo Jáv
  ea : 1930-2005 de Bartolomé Bas Segarra
 DTSTART;TZID=Europe/Madrid:20260930T000000
 DTEND;TZID=Europe/Madrid:20260930T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:309857aa9ad756b512238cdca6f88d0907916d5b@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Boney M Experience
@@ -246,7 +246,7 @@ UID:34ae2f333184ff6b05ea1daf821f06a1f4988d67@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Queen Tribute
@@ -257,7 +257,7 @@ UID:34c9b99a2ed05ec51495fe95e37fc3ad3556fa2f@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Just Us
@@ -268,19 +268,19 @@ UID:35078ef0570697d333105ca4141c082dd7f19ca8@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Presentación del libro : Els periòdics escolars de Xàbia de Fra
  ncesc Reus i Boyd-Swan
 DTSTART;TZID=Europe/Madrid:20260916T000000
 DTEND;TZID=Europe/Madrid:20260916T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:3c32b770da022e0a0144c178e05e6e3ab5a2ca9d@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rafa Raposo
@@ -291,40 +291,40 @@ UID:3e3ee03ab50431b2f97501803e5f2413064058e7@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Jornada Xàbia Emprén: Taller De problema a Idea
 DTSTART;TZID=Europe/Madrid:20261001T000000
 DTEND;TZID=Europe/Madrid:20261001T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:45dd8da17012775437b0c1639ba4ffdeb2e405e6@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🖼️ XXXVIII EXFILNUM
 DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
 DTSTAMP:20260826T100737Z
 UID:47329a56e6617399b80ae661cacdb30f9de97e48@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/en/categoria-agenda/eventos-en/
+URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Ofrenda de flores a la Virgen de Loreto
 DTSTART;TZID=Europe/Madrid:20260906T000000
 DTEND;TZID=Europe/Madrid:20260906T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:47d2551cc913269dcd69afff1ab53744e805eaab@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 The Jack (AC/DC)
@@ -335,7 +335,7 @@ UID:4c2d6ae3d2990731b94f3f3ed3898642a05ed344@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Just Pretend (Elvis)
@@ -346,7 +346,7 @@ UID:4de5edeee99e43658072d7cbf6ebf77adff71e2b@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 JJ Jones (Neil Diamond)
@@ -357,7 +357,7 @@ UID:4e6f8491c4ca197c1292373ab0368b4d993944f6@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rafa & Janyssha
@@ -368,18 +368,18 @@ UID:4f0aa45d99ae2e79b70caccd830b8679d0e83c60@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:"Albufera" de Vicente Colom
 DTSTART;TZID=Europe/Madrid:20260807T000000
 DTEND;TZID=Europe/Madrid:20260906T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:5876f065de5ac4a8068dd413173cc2092c3f1874@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 MJ vs Gaga Tribute
@@ -390,7 +390,7 @@ UID:5dd93fe6779bbc153349afad85249bf3372632c6@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Diana Ross Experience
@@ -401,7 +401,7 @@ UID:6181dbb4ac8747b65669c60124a0411be819f1d5@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎧 Tardeo – DJ Esteve Bas
@@ -425,7 +425,7 @@ UID:6c9612531f536f28b066b6f6fa09ff8775d3760e@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Madonna Tribute
@@ -436,29 +436,29 @@ UID:6de29dc5579178f3f592fd74296b80acea34124e@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:VI Feria de Stocks Comarcal
 DTSTART;TZID=Europe/Madrid:20260919T000000
 DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:6e49e3907a2eef06348cae49ba70416f2914e466@moraira-calendar
 CATEGORIES:Markt & winkelen
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Exposición Entre Azules
 DTSTART;TZID=Europe/Madrid:20260511T000000
 DTEND;TZID=Europe/Madrid:20261025T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:6e70c4c6e00d1b5090275fa550b182387ef508a3@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Gipsy Kings Experience
@@ -469,7 +469,7 @@ UID:6f4a59a4c5e0796c33195db1157db352fa6690e6@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Brink Band Jam
@@ -480,7 +480,7 @@ UID:72f1637624e07e6a4bbf0a09c67949df4e0fa8b6@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rafa Raposo
@@ -491,19 +491,19 @@ UID:76ce680837cb633e9972cb76c06d5b2c2a1fa19e@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🇪🇸 Día de la Comunidad Valenciana
 DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
 DTSTAMP:20260828T174345Z
 UID:77f8399855dd7026cd9949148f38f4f74dc6d2f0@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Teulada & Moraira
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 The Tongue (Rolling Stones)
@@ -514,29 +514,29 @@ UID:79f4783a90e4f439c3e348cf683c08b2e2ff6133@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🍇 Muscat Festival
 DTSTART;VALUE=DATE:20260905
-DTEND;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
 DTSTAMP:20260826T100737Z
 UID:80f2c5c818882b60ae174013aa82b766983a6b95@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Plaça Rei Jaume I\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/en/categoria-agenda/eventos-en/
+URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Intercambio Colla Portitxol de Xàbia con Colla Socarrel.
 DTSTART;TZID=Europe/Madrid:20260927T000000
 DTEND;TZID=Europe/Madrid:20260927T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:827a369e70398b81ec919bd5918f9d65cfae5ded@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎉 Presentatie Fiestas Mare de Déu de Loreto
@@ -556,35 +556,35 @@ SUMMARY:🎉 Castillo de fuegos artificiales. Fin de fiestas Mare de Déu
  de Loreto · Xàbia
 DTSTART;TZID=Europe/Madrid:20260909T000000
 DTEND;TZID=Europe/Madrid:20260909T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:88137809e590e0680f8abba5d6b69498d3b13633@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🍷 Alere / DOLIA – enotoerisme & gastronomie
 DTSTART;VALUE=DATE:20260904
-DTEND;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
 DTSTAMP:20260826T100737Z
 UID:89b31db03727d3b3bf25db97c056010d2cbc864d@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Auditori Teulada Moraira\, Teulada
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Cuentacuentos infantil Las aventuras de María Buenta Pata
 DTSTART;TZID=Europe/Madrid:20260925T000000
 DTEND;TZID=Europe/Madrid:20260925T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:8afa2f9ee649f89674b0c8103c8af68b9b9834d5@moraira-calendar
 CATEGORIES:Familie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎧 Discomóvil – DJ Alex Femenia
@@ -615,14 +615,14 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🛍️ Tu Comercio en la Calle
 DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
 DTSTAMP:20260826T100737Z
 UID:991a8d8745e44d61471e04c6ac05d7b92c426644@moraira-calendar
 CATEGORIES:Markt & winkelen
 LOCATION:Moraira
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Pink Floyd Experience
@@ -633,7 +633,7 @@ UID:99adb40a7cbc4db2a756e465a7f692716f30f798@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Amy Winehouse Tribute
@@ -644,7 +644,7 @@ UID:9aa46be3cf2d080bfa488000ffb44336c938a1b5@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Beatles Tribute
@@ -655,7 +655,7 @@ UID:9bc105288e037dd691a4ed1c8f1c5efa24e18538@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Blues Brothers Tribute
@@ -666,7 +666,7 @@ UID:9f2e96b77d1d4eb8a556ae29cb1169faa6714f99@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Brink Band Jam
@@ -677,7 +677,7 @@ UID:a18c87a00f38777ab814d37833a60496d337088b@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 George Michael Tribute
@@ -688,7 +688,7 @@ UID:a244d9fdf55747f60bc98782b51ae49fca581420@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⛪ Processie Mare de Déu de Loreto
@@ -712,7 +712,7 @@ UID:a4cae41ad1b2a586a9fd50c295b5a4fdc3a49ff7@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎭 Grote praalwagenoptocht Loreto
@@ -744,12 +744,12 @@ BEGIN:VEVENT
 SUMMARY:🎭 Teatro Un marido ideal. · Xàbia
 DTSTART;TZID=Europe/Madrid:20260919T000000
 DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:a91ab29fbe911a0321b58d387769790d4a530048@moraira-calendar
 CATEGORIES:Theater & film
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎭 MAGICOMEDIA – Darío Piera
@@ -773,7 +773,7 @@ UID:b160137dcc99eb2d7bd3699277e7e5ec492674af@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎆 Vuurwerk boven zee – afsluiting Loreto
@@ -792,12 +792,12 @@ BEGIN:VEVENT
 SUMMARY:Nueva sesión de Bebeteca en Xàbia: Tornem al col·le!
 DTSTART;TZID=Europe/Madrid:20260928T000000
 DTEND;TZID=Europe/Madrid:20260928T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:b7d4d4ba192df55f88f859a117b0faa05cd5f90d@moraira-calendar
 CATEGORIES:Familie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 ABBA Tribute
@@ -808,18 +808,18 @@ UID:b9f75d3d6004b97dc40199dd0a83093b5ccfdbf4@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:XIV TriXàbia 2026 XI Memorial Edu Monfort
 DTSTART;TZID=Europe/Madrid:20260927T000000
 DTEND;TZID=Europe/Madrid:20260927T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:bc7928aeeb5b9d8274347100b3fe78350965d336@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Adele Tribute
@@ -830,19 +830,19 @@ UID:bcd09dfa34455ad1cc1d6b21526e797f2302e4dc@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🍺 Oktoberfest Moraira
 DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
 DTSTAMP:20260828T174345Z
 UID:bdada4923efe0cd1fb47aa18e48d7113823a6c9d@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Parking Les Sorts\, Moraira
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Orquesta TITANIC
@@ -862,12 +862,12 @@ SUMMARY:Presentación de los libros: Jo am\, Si s’han tonat tan magres l
  es paraules i Llengua de fang\, de Mercé Estrela Tena
 DTSTART;TZID=Europe/Madrid:20260917T000000
 DTEND;TZID=Europe/Madrid:20260917T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:c1c082df8b97c0580c8151e7c2b084b93d16314e@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎉 Start Bous a la Mar & Baret dels Bous
@@ -886,12 +886,12 @@ BEGIN:VEVENT
 SUMMARY:Teatro
 DTSTART;TZID=Europe/Madrid:20260807T000000
 DTEND;TZID=Europe/Madrid:20260906T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:c3d9564219d6a6d70906b2f9720365237db5c1a3@moraira-calendar
 CATEGORIES:Theater & film
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rafa Raposo
@@ -902,18 +902,18 @@ UID:c63faa5aeb698f9ed221e2b20c80ad29bff21fdd@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Procesió de la Virgen de Loreto
 DTSTART;TZID=Europe/Madrid:20260908T000000
 DTEND;TZID=Europe/Madrid:20260908T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:c84c20821db9b488b1d75e1d641102db10aa5abc@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rio
@@ -924,7 +924,7 @@ UID:cab5fd3058376fc1f906d0e3ccfbb12ce60d8ab5@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Moonshine Duo
@@ -935,7 +935,7 @@ UID:cb31e55fabe8fc387c8176a3a2c11644fa5c883b@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎉 50 jaar Peña La Bufa – feestdag
@@ -953,47 +953,47 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🗿 ALMA 2026 – Internationale monumentale sculptuur
 DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
 DTSTAMP:20260828T174345Z
 UID:cdd9e3e776c74da429a3e0ed4a952ed8db3dedaf@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Auditori Teulada Moraira\, Teulada
 TRANSP:TRANSPARENT
-URL:https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-v
- ida-urbana/fiestas/calendario-de-fiestas/
+URL:https://info-teulada-moraira.com/nl/informatie-over-de-stad/cultuur-st
+ adsleven/feesten/feestkalender/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Lo que resuena por debajo
 DTSTART;TZID=Europe/Madrid:20260911T000000
 DTEND;TZID=Europe/Madrid:20261011T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:cffc3fa6f3bb93b553820a10041cd81528b7cb72@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mascletà
 DTSTART;TZID=Europe/Madrid:20260908T000000
 DTEND;TZID=Europe/Madrid:20260908T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:d4a068281c177dccc5872644bdd4476921c782da@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:👑 Verkiezing Festivalkoninginnen PX’27
 DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
 DTSTAMP:20260826T100737Z
 UID:d7d2cb887365a7ed5692dc7af79ccd2b07f23a0a@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Plaça Rei Jaume I\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/en/categoria-agenda/eventos-en/
+URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Il Divo Tribute
@@ -1004,29 +1004,29 @@ UID:d7da7445bd22674f82f4e44c8902b39d8df83609@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎉 PROCESIÓN CRISTO DEL MAR · Xàbia
 DTSTART;TZID=Europe/Madrid:20260907T000000
 DTEND;TZID=Europe/Madrid:20260907T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:d7f441d99fa9ba645067f2eb7c61389b87e7c15d@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎬 Benissa en Corto – filmfestival
 DTSTART;VALUE=DATE:20260831
-DTEND;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
 DTSTAMP:20260826T100737Z
 UID:da060155021ace69a3195e650681f5790d19fb69@moraira-calendar
 CATEGORIES:Theater & film
 LOCATION:Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/en/categoria-agenda/eventos-en/
+URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Just Pretend (Elvis)
@@ -1037,7 +1037,7 @@ UID:db95d334968edba6f3138057367a7dab716dcf01@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 The Jack (AC/DC)
@@ -1048,18 +1048,18 @@ UID:deee531e1bad12d46252c11a0e26019daf20fcb3@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎭 Exposición Entre mar y tierra · Xàbia
 DTSTART;TZID=Europe/Madrid:20260817T000000
 DTEND;TZID=Europe/Madrid:20260930T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:dfd888bba058475f6696bc6d9019ddd2f53026a3@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Brink Band Jam
@@ -1070,7 +1070,7 @@ UID:e0bc1506c40f2eda932d734af7f5c897c31dd4d0@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Rafa Raposo
@@ -1081,18 +1081,18 @@ UID:e24bbb0ef6f5a34827955b7489e4dac641286c77@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Experiencia de Apiturismo
 DTSTART;TZID=Europe/Madrid:20260905T000000
 DTEND;TZID=Europe/Madrid:20260905T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:e6e7345f2ab3cb8f34eb05476f910c21e9287a8e@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Tribute to Camilo Sesto
@@ -1103,7 +1103,7 @@ UID:ef87f12c428e38bf7f2e37676801bdd4f383a12e@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Centre d'Art Taller Ivars\, Benissa
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/de/agenda/
+URL:https://www.benissa.es/nl/agenda/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Brink Band Jam
@@ -1114,7 +1114,7 @@ UID:f2df9efddd8692f773f5586dc0b624bed402a16b@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 The Beatles Tribute
@@ -1125,7 +1125,7 @@ UID:f3f9a6d4f916fde4454522840c3eb8aa8462a6ca@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Bon Jovi Tribute
@@ -1136,19 +1136,19 @@ UID:f670d6c8d91b1ac884630e7c1bef85795b0ad7df@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
-URL:https://www.moraira.info/en/events/saxo-disco-garden/
+URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:II Desafío “100 Paladas Solidarias SUMA contra el Cáncer de Ma
  ma – Desafíos SUMA por la Igualdad”
 DTSTART;TZID=Europe/Madrid:20260920T000000
 DTEND;TZID=Europe/Madrid:20260920T020000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:f6e4ca79221427f12f552283701fbefaeb0b8b01@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:👨‍👩‍👧 Familieshow Monstre Petorro
@@ -1167,11 +1167,11 @@ BEGIN:VEVENT
 SUMMARY:Mediterrània
 DTSTART;TZID=Europe/Madrid:20260911T000000
 DTEND;TZID=Europe/Madrid:20261011T000000
-DTSTAMP:20260828T174345Z
+DTSTAMP:20260828T203905Z
 UID:feeeeb905288cc0f369419a6cd501b9c0a9c5454@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 END:VCALENDAR
