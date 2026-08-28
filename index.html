@@ -3,261 +3,500 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moraira & omgeving – Agenda</title>
+  <title>Moraira &amp; omgeving – Agenda</title>
+  <meta name="description" content="Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia: concerten, fiestas, markten, gastronomie en cultuur. Wekelijks bijgewerkt." />
+  <meta name="theme-color" content="#d2a83e" />
+  <link rel="canonical" href="https://moraira-agenda.netlify.app/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d2a83e'/%3E%3Crect x='12' y='17' width='40' height='33' rx='5' fill='%23fffdf8'/%3E%3Crect x='12' y='17' width='40' height='10' rx='5' fill='%23000'/%3E%3Crect x='20' y='11' width='5' height='11' rx='2.5' fill='%23000'/%3E%3Crect x='39' y='11' width='5' height='11' rx='2.5' fill='%23000'/%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:title" content="Moraira & omgeving – Evenementen-agenda" />
+  <meta property="og:description" content="Concerten, fiestas, markten en cultuur in Moraira, Teulada, Benissa en Xàbia. Wekelijks bijgewerkt." />
+  <meta property="og:url" content="https://moraira-agenda.netlify.app/" />
+  <meta property="og:image" content="https://moraira-agenda.netlify.app/villa-herrera.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     :root{
       --brand:#d2a83e;
       --brand-soft:#ead9a7;
       --bg:#f7f3e8;
       --card:#fffdf8;
+      --surface:#fff;
       --text:#000;
       --muted:#5c5545;
       --line:#d8ccb0;
+      --focus:#7a5c00;
       --shadow:0 8px 28px rgba(0,0,0,.08)
+    }
+    @media(prefers-color-scheme:dark){
+      :root{
+        --bg:#221f19;
+        --card:#2c2822;
+        --surface:#37322a;
+        --text:#f4eee1;
+        --muted:#b7ac93;
+        --line:#4a4335;
+        --focus:#e7c65e;
+        --shadow:0 8px 28px rgba(0,0,0,.4)
+      }
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
-    .hero{background:var(--brand);color:#000;padding:28px 20px 26px;border-bottom:1px solid rgba(0,0,0,.12)}
-    .hero-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .hero-copy{min-width:0}
-    .villa-logo-link{display:block;flex:0 0 auto;line-height:0;background:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-    .villa-logo{display:block;width:min(240px,30vw);height:auto;max-height:96px;object-fit:contain;border-radius:999px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    a{color:inherit}
+    :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 
+    .hero{background:var(--brand);color:#000;padding:28px 20px 26px;border-bottom:1px solid rgba(0,0,0,.12)}
     .wrap{max-width:1100px;margin:0 auto}
     h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px;letter-spacing:-.02em}
     .lead{margin:0;font-size:17px}
-    .panel{margin:-18px auto 24px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
-    .filter-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
-    .searchbar{display:flex;gap:10px;align-items:end;margin-bottom:16px}
+
+    .panel{margin:-18px auto 18px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .searchbar{display:flex;gap:10px;align-items:end}
     .searchbar>div:first-child{flex:1}
-    label.group-label{font-size:12px;font-weight:800;color:var(--muted);display:block;margin:0 0 7px;text-transform:uppercase;letter-spacing:.05em}
-    input[type=search]{width:100%;font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 12px;background:white;color:var(--text)}
+    label.group-label,legend.group-label{font-size:12px;font-weight:800;color:var(--muted);display:block;margin:0 0 7px;text-transform:uppercase;letter-spacing:.05em;padding:0}
+    input[type=search]{width:100%;font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 12px;background:var(--surface);color:var(--text)}
+    input[type=search]::placeholder{color:var(--muted)}
     button{font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 14px;background:var(--brand);color:#000;font-weight:800;cursor:pointer}
     button:hover{filter:brightness(.97)}
-    .checkgroup{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}
-    .checks{display:grid;grid-template-columns:1fr;gap:7px;max-height:190px;overflow:auto;padding-right:4px}
+
+    .filters{margin-top:14px;border-top:1px solid var(--line);padding-top:4px}
+    .filters>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 2px;font-weight:800;font-size:14px}
+    .filters>summary::-webkit-details-marker{display:none}
+    .filters>summary::after{content:"▾";transition:transform .15s;color:var(--muted)}
+    .filters[open]>summary::after{transform:rotate(180deg)}
+    .filter-grid{display:grid;grid-template-columns:1.1fr 1fr 1.4fr;gap:18px;padding-top:8px}
+    fieldset.checkgroup{border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--surface);margin:0;min-width:0}
+    .checks{display:grid;grid-template-columns:1fr;gap:7px}
+    #typeChecks{grid-template-columns:1fr 1fr}
     .check{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
-    .check input{width:18px;height:18px;accent-color:var(--brand);cursor:pointer}
+    .check input{width:18px;height:18px;accent-color:var(--brand);cursor:pointer;flex:0 0 auto}
+    .period-opts{display:flex;flex-wrap:wrap;gap:7px}
+    .period-opts label{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;cursor:pointer;background:var(--surface)}
+    .period-opts label.is-on,.period-opts label:has(input:checked){background:var(--brand);border-color:var(--brand);color:#000}
+    .period-opts label:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+    .period-opts input{position:absolute;opacity:0;pointer-events:none}
     .quick{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
-    .quick button{padding:7px 10px;background:#fff;border-color:var(--line);font-size:12px}
-    .meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:0 0 14px;color:var(--muted);font-size:14px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-bottom:40px}
+    .quick button{padding:7px 10px;background:var(--surface);color:var(--text);border-color:var(--line);font-size:12px}
+
+    .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 12px}
+    .toolbar a{display:inline-block;text-decoration:none;font-size:13px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:8px 13px;background:var(--card)}
+    .toolbar a:hover{background:var(--surface)}
+
+    .meta{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin:0 0 4px;color:var(--muted);font-size:14px}
+    .count{font-weight:800;color:var(--text)}
+    .active-filter-count{font-weight:800;color:var(--text)}
+    .subtle{color:var(--muted);font-size:12.5px;margin:0 0 16px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-bottom:32px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 3px 14px rgba(0,0,0,.04)}
-    .date{font-size:13px;font-weight:900;color:#000}
+    .date{font-size:13px;font-weight:900;color:var(--text)}
     .title{font-size:19px;line-height:1.25;margin:5px 0 10px;font-weight:900}
+    .title .ico{font-weight:400}
     .badge{display:inline-block;font-size:12px;font-weight:800;background:var(--brand-soft);color:#000;border-radius:999px;padding:5px 8px;margin:0 6px 6px 0}
     .location{font-size:14px;color:var(--muted);margin:4px 0 10px}
-    .details{font-size:14px;line-height:1.45;color:#29251d;white-space:pre-line;max-height:88px;overflow:hidden}
-    .more{margin-top:12px;display:inline-block;color:#000;font-weight:900;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
-    .empty,.error{background:white;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}
-    .footer{padding:0 20px 35px;text-align:center;color:var(--muted);font-size:13px}
-    .active-filter-count{font-weight:800;color:#000}
-    @media(max-width:850px){.filter-grid{grid-template-columns:1fr 1fr}.searchgroup{grid-column:1/-1}.grid{grid-template-columns:1fr}}
-    @media(max-width:560px){.filter-grid{grid-template-columns:1fr}.searchgroup{grid-column:auto}.searchbar{flex-direction:column;align-items:stretch}.hero{padding-top:30px}.sponsor-logo{display:block;width:20vw;max-width:200px;min-width:100px;height:auto;object-fit:contain;margin:0 auto}.meta{align-items:flex-start;flex-direction:column}}
-      .sponsor-block img{width:20vw !important;max-width:200px !important;min-width:100px;height:auto !important;display:block;margin:0 auto}
-    @media(max-width:600px){.sponsor-block img{width:20vw !important;max-width:140px !important;min-width:90px}}
-</style>
+    .details{font-size:14px;line-height:1.45;color:var(--text);white-space:pre-line;max-height:96px;overflow:hidden}
+    .more{margin-top:12px;display:inline-block;color:var(--text);font-weight:900;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+    .empty,.error{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}
+    .error button{margin-top:12px}
+
+    .footer{padding:8px 20px 40px;text-align:center;color:var(--muted);font-size:13px}
+    .sponsor-block img{width:min(180px,42vw);height:auto;display:block;margin:0 auto 8px}
+    .sponsor-text{max-width:520px;margin:0 auto}
+
+    @media(max-width:850px){
+      .filter-grid{grid-template-columns:1fr}
+      #typeChecks{grid-template-columns:1fr 1fr}
+      .grid{grid-template-columns:1fr}
+      .searchbar{flex-direction:column;align-items:stretch}
+      .meta{flex-direction:column;align-items:flex-start;gap:2px}
+    }
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
-      <div class="hero-copy">
-        <h1>Moraira & omgeving</h1>
-        <p class="lead">Evenementen-agenda</p>
-      </div>
+      <h1>Moraira &amp; omgeving</h1>
+      <p class="lead">Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia</p>
     </div>
   </header>
 
   <main class="wrap" style="padding:0 16px">
-    <section class="panel" aria-label="Filters">
+    <section class="panel" aria-label="Zoeken en filteren">
       <div class="searchbar">
         <div>
           <label class="group-label" for="q">Zoeken</label>
           <input id="q" type="search" placeholder="Bijv. tribute, fiesta, wijn…" />
         </div>
-        <button id="reset">Wis alle filters</button>
+        <button id="reset" type="button">Wis alle filters</button>
       </div>
 
-      <div class="filter-grid">
-        <div class="checkgroup searchgroup">
-          <label class="group-label">Periode</label>
-          <div class="checks" id="periodChecks">
-            <label class="check"><input type="checkbox" name="period" value="7"> Komende 7 dagen</label>
-            <label class="check"><input type="checkbox" name="period" value="30"> Komende 30 dagen</label>
-            <label class="check"><input type="checkbox" name="period" value="90"> Komende 3 maanden</label>
-          </div>
-          <div class="quick">
-            <button type="button" data-period="7">Deze week</button>
-            <button type="button" data-period="30">Deze maand</button>
-            <button type="button" data-period="">Alles</button>
-          </div>
-        </div>
+      <details class="filters" id="filterBox">
+        <summary><span>Filters — periode, locatie, type</span><span id="activeFilters" class="active-filter-count"></span></summary>
+        <div class="filter-grid">
+          <fieldset class="checkgroup">
+            <legend class="group-label">Periode</legend>
+            <div class="period-opts" id="periodOpts">
+              <label><input type="radio" name="period" value="" checked> Alles</label>
+              <label><input type="radio" name="period" value="7"> Komende week</label>
+              <label><input type="radio" name="period" value="30"> Komende maand</label>
+              <label><input type="radio" name="period" value="90"> Komende 3 maanden</label>
+            </div>
+          </fieldset>
 
-        <div class="checkgroup">
-          <label class="group-label">Locatie</label>
-          <div class="checks" id="locationChecks"></div>
-          <div class="quick">
-            <button type="button" data-checkall="location">Alles aan</button>
-            <button type="button" data-uncheckall="location">Alles uit</button>
-          </div>
-        </div>
+          <fieldset class="checkgroup">
+            <legend class="group-label">Locatie</legend>
+            <div class="checks" id="locationChecks"></div>
+            <div class="quick">
+              <button type="button" data-checkall="location">Alles aan</button>
+              <button type="button" data-uncheckall="location">Alles uit</button>
+            </div>
+          </fieldset>
 
-        <div class="checkgroup">
-          <label class="group-label">Type activiteit</label>
-          <div class="checks" id="typeChecks"></div>
-          <div class="quick">
-            <button type="button" data-checkall="type">Alles aan</button>
-            <button type="button" data-uncheckall="type">Alles uit</button>
-          </div>
+          <fieldset class="checkgroup">
+            <legend class="group-label">Type activiteit</legend>
+            <div class="checks" id="typeChecks"></div>
+            <div class="quick">
+              <button type="button" data-checkall="type">Alles aan</button>
+              <button type="button" data-uncheckall="type">Alles uit</button>
+            </div>
+          </fieldset>
         </div>
-      </div>
+      </details>
     </section>
+    <script>if(window.matchMedia('(min-width: 851px)').matches){document.getElementById('filterBox').open=true;}</script>
+
+    <nav class="toolbar" aria-label="Agenda toevoegen aan je eigen app">
+      <a id="subApple" href="#">➕ Abonneer in agenda-app</a>
+      <a id="subGoogle" href="#" target="_blank" rel="noopener noreferrer">Google Agenda</a>
+      <a id="subDownload" href="./moraira.ics" download>Download .ics</a>
+    </nav>
 
     <div class="meta">
-      <span id="count">Agenda laden…</span>
-      <span id="activeFilters" class="active-filter-count"></span>
+      <span id="count" class="count" role="status" aria-live="polite">Agenda laden…</span>
+      <span id="updated"></span>
     </div>
-    <section id="events" class="grid"></section>
+    <p class="subtle">Tijden en programma’s kunnen wijzigen — controleer kort voor je bezoek bij de organisator.</p>
+
+    <h2 class="sr-only">Activiteiten</h2>
+    <section id="events" class="grid" aria-busy="true"></section>
   </main>
 
   <footer class="footer">
     <div class="sponsor-block">
-      <a class="sponsor-logo-link" href="http://www.villaherrera.nl/" target="_blank" rel="noopener" aria-label="Villa Herrera">
-        <img class="sponsor-logo" src="villa-herrera.webp" alt="Villa Herrera">
+      <a href="http://www.villaherrera.nl/" target="_blank" rel="noopener noreferrer" aria-label="Villa Herrera">
+        <img src="villa-herrera.webp" width="640" height="302" loading="lazy" decoding="async" alt="Villa Herrera">
       </a>
-      <p class="sponsor-text">deze evenementen-agenda wordt je aangeboden door Villa Herrera · <a href="http://www.villaherrera.nl/" target="_blank" rel="noopener">Lees meer over Villa Herrera</a></p>
+      <p class="sponsor-text">Deze evenementen-agenda wordt je aangeboden door Villa Herrera · <a href="http://www.villaherrera.nl/" target="_blank" rel="noopener noreferrer">Lees meer over Villa Herrera</a></p>
     </div>
   </footer>
 
 <script>
-const ICS_URL='./moraira.ics';
-let allEvents=[];
+const ICS_URL = './moraira.ics';
+let allEvents = [];
 
-function unfoldICS(text){return text.replace(/\r?\n[ \t]/g,'')}
-function unescapeICS(s=''){return s.replace(/\\n/gi,'\n').replace(/\\,/g,',').replace(/\\;/g,';').replace(/\\\\/g,'\\').trim()}
-function prop(block,name){const re=new RegExp('^'+name+'(?:;[^:]*)?:(.*)$','mi');const m=block.match(re);return m?unescapeICS(m[1]):''}
-function parseDate(value){
-  if(!value)return null;const v=value.trim();
-  if(/^\d{8}$/.test(v))return new Date(+v.slice(0,4),+v.slice(4,6)-1,+v.slice(6,8));
-  const m=v.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z?$/);if(!m)return null;
-  return new Date(+m[1],+m[2]-1,+m[3],+m[4],+m[5],+m[6]);
+/* ---------- ICS parsing ---------- */
+function unfoldICS(text){ return text.replace(/\r?\n[ \t]/g,''); }
+function unescapeICS(s=''){
+  return s.replace(/\\n/gi,'\n').replace(/\\,/g,',').replace(/\\;/g,';').replace(/\\\\/g,'\\').trim();
 }
-function deriveCategory(e){
-  const cat=e.categoryRaw||(e.description.match(/(?:Categorie|Rubriek):\s*([^\n]+)/i)||[])[1]||'';
-  if(cat)return cat.trim();
-  const s=(e.summary+' '+e.description).toLowerCase();
-  if(/[🎵]|concert|music|muziek|tribute|dj|orquesta/.test(s))return'Muziek';
-  if(/[🎉]|fiesta|festes|traditie|moros|cristianos/.test(s))return'Fiesta & traditie';
-  if(/[🍷]|gastr|wine|vino|moscat|gourmet|tapa/.test(s))return'Gastronomie & wijn';
-  if(/[🛍️]|mercado|market|markt|feria|fira/.test(s))return'Markt & winkelen';
-  if(/[🎭]|expos|culture|cultuur|teatro|cine|art/.test(s))return'Kunst & cultuur';
-  if(/[🏃]|sport|race|regata|carrera|trail/.test(s))return'Sport & buiten';
-  return'Overig';
+function prop(block,name){
+  const m = block.match(new RegExp('^'+name+'(?:;[^:]*)?:(.*)$','mi'));
+  return m ? unescapeICS(m[1]) : '';
+}
+function parseLocalDate(value){
+  if(!value) return null;
+  const v = value.trim();
+  if(/^\d{8}$/.test(v)) return new Date(+v.slice(0,4), +v.slice(4,6)-1, +v.slice(6,8));
+  const m = v.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z?$/);
+  return m ? new Date(+m[1], +m[2]-1, +m[3], +m[4], +m[5], +m[6]) : null;
+}
+function parseStamp(value){
+  const m = (value||'').match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z$/);
+  return m ? new Date(Date.UTC(+m[1], +m[2]-1, +m[3], +m[4], +m[5], +m[6])) : null;
+}
+
+/* ---------- categorisation ---------- */
+function canonicalCategory(raw){
+  const s = (raw||'').toLowerCase();
+  if(/fiesta|festes|traditie|vuurwerk|processie|procesi|romer|moros|cristian|ofrenda|bloemen|desfil|praalwagen/.test(s)) return 'Fiesta & traditie';
+  if(/muziek|music|concert|\bdj\b|orquesta|tribute|tributo|bandjam|band jam|rondalla|disco/.test(s)) return 'Muziek';
+  if(/famil|kinder|kids|infantil/.test(s)) return 'Familie';
+  if(/sport|race|regatt|regata|carrera|cursa|trail|marcha|petanca|running/.test(s)) return 'Sport & buiten';
+  if(/gastro|wijn|wine|moscat|tapa|paella|gourmet|cerveza|oktoberfest|degust|enotoer|vino/.test(s)) return 'Gastronomie & wijn';
+  if(/film|theater|teatro|cine|comedy|comedia|magic|magico|circ|show|entertainment|espectacul/.test(s)) return 'Theater & film';
+  if(/kunst|art|expos|cultuur|cultura|sculpt|escultura|museo|foto|exfil|monument/.test(s)) return 'Kunst & cultuur';
+  if(/markt|mercad|winkel|feria|fira|comercio|rastro/.test(s)) return 'Markt & winkelen';
+  if(/natuur|rondleiding|wandel|walk|ruta|sender|excurs|paseo|maanlicht|guided/.test(s)) return 'Natuur & rondleiding';
+  return 'Overig';
+}
+function deriveCategoryFromText(e){
+  const cat = (e.description.match(/(?:Categorie|Rubriek):\s*([^\n]+)/i)||[])[1] || '';
+  return canonicalCategory(cat || (e.summary + ' ' + e.description));
 }
 function derivePlace(location=''){
-  const s=location.toLowerCase();
-  if(s.includes('moraira'))return'Moraira';
-  if(s.includes('teulada'))return'Teulada';
-  if(s.includes('benissa'))return'Benissa';
-  if(s.includes('benitatxell')||s.includes('poble nou'))return'Benitatxell';
-  if(s.includes('xàbia')||s.includes('xabia')||s.includes('jávea')||s.includes('javea'))return'Xàbia';
-  if(s.includes('calp')||s.includes('calpe'))return'Calp';
-  return location?location.split(',').pop().trim():'Onbekend';
+  const s = location.toLowerCase();
+  if(s.includes('moraira')) return 'Moraira';
+  if(s.includes('teulada')) return 'Teulada';
+  if(s.includes('benissa')) return 'Benissa';
+  if(s.includes('benitatxell') || s.includes('poble nou')) return 'Benitatxell';
+  if(s.includes('xàbia') || s.includes('xabia') || s.includes('jávea') || s.includes('javea')) return 'Xàbia';
+  if(s.includes('calp') || s.includes('calpe')) return 'Calp';
+  return location ? location.split(',').pop().trim() : 'Onbekend';
 }
-function parseICS(text){
-  const u=unfoldICS(text);
-  return[...u.matchAll(/BEGIN:VEVENT([\s\S]*?)END:VEVENT/g)].map(m=>{
-    const b=m[1],summary=prop(b,'SUMMARY'),description=prop(b,'DESCRIPTION'),location=prop(b,'LOCATION');
-    const e={summary,description,location,url:prop(b,'URL'),categoryRaw:prop(b,'CATEGORIES'),start:parseDate(prop(b,'DTSTART')),end:parseDate(prop(b,'DTEND'))};
-    e.category=deriveCategory(e);e.place=derivePlace(location);return e;
-  }).filter(e=>e.start).sort((a,b)=>a.start-b.start);
+
+/* ---------- dates ---------- */
+/* An end at exactly 00:00 means "runs until the end of the previous day"
+   (icalendar writes all-day DTEND as start+1, and late concerts as next-day 00:00). */
+function eventEnd(e){
+  if(!e.end) return e.start;
+  if(e.end > e.start && e.end.getHours() === 0 && e.end.getMinutes() === 0) return new Date(e.end.getTime() - 1);
+  return e.end;
 }
-function safeText(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function fmtDate(d){return new Intl.DateTimeFormat('nl-NL',{weekday:'short',day:'numeric',month:'short',year:'numeric'}).format(d)}
-function fmtTime(d){return new Intl.DateTimeFormat('nl-NL',{hour:'2-digit',minute:'2-digit'}).format(d)}
+function fmtDate(d){ return new Intl.DateTimeFormat('nl-NL',{weekday:'short',day:'numeric',month:'short',year:'numeric'}).format(d); }
+function fmtDateShort(d){ return new Intl.DateTimeFormat('nl-NL',{day:'numeric',month:'short',year:'numeric'}).format(d); }
+function fmtTime(d){ return new Intl.DateTimeFormat('nl-NL',{hour:'2-digit',minute:'2-digit'}).format(d); }
 function dateLabel(e){
-  const s=fmtDate(e.start),hasTime=e.start.getHours()||e.start.getMinutes();
-  if(e.end&&e.end.toDateString()!==e.start.toDateString())return`${s}${hasTime?' · '+fmtTime(e.start):''} – ${fmtDate(e.end)}`;
-  return`${s}${hasTime?' · '+fmtTime(e.start):''}`;
+  const start = e.start, end = eventEnd(e);
+  const hasTime = start.getHours() || start.getMinutes();
+  const s = fmtDate(start);
+  if(end.toDateString() !== start.toDateString()) return `${s}${hasTime ? ' · ' + fmtTime(start) : ''} – ${fmtDate(end)}`;
+  return `${s}${hasTime ? ' · ' + fmtTime(start) : ''}`;
 }
-function cleanDescription(s){return s.replace(/(?:Categorie|Rubriek):[^\n]*\n?/gi,'').replace(/Bron:\s*https?:\/\/\S+\n?/gi,'').replace(/Meer informatie:\s*https?:\/\/\S+/gi,'').trim()}
-function cleanUrl(url=''){
-  return url
-    .replace(/[\r\n\t]/g,'')
-    .replace(/\\,/g,',')
-    .replace(/\\;/g,';')
-    .replace(/\\:/g,':')
-    .replace(/\\\\/g,'\\')
+
+/* ---------- text helpers ---------- */
+function safeText(s){ const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+function cleanDescription(s){
+  return (s||'')
+    .replace(/^\s*(?:Categorie|Rubriek):[^\n]*$/gim,'')      // whole "Categorie: …" line
+    .replace(/^\s*(?:Bron|Meer informatie):[^\n]*$/gim,'')    // whole "Bron: …" / "Meer informatie: …" line
+    .replace(/\s*(?:Bron|Meer informatie):\s*https?:\/\/\S+/gi,'') // inline source URL
+    .replace(/\s*Controleer kort voor vertrek[^\n]*/gi,'')    // repeated boilerplate (shown once page-wide)
+    .replace(/\\+/g,'')
+    .replace(/[ \t]+/g,' ')
+    .replace(/ *\n */g,'\n')
+    .replace(/\n{2,}/g,'\n')
     .trim();
 }
-function eventUrl(e){
-  const u=cleanUrl(e.url||'');
-  if(/^https?:\/\//i.test(u)) return u;
-  const m=(e.description||'').match(/(?:Bron|Meer informatie):\s*(https?:\/\/[^\s]+)/i);
-  return m?cleanUrl(m[1]):'';
+function cleanUrl(url=''){
+  return url.replace(/[\r\n\t]/g,'').replace(/\\([,;:\\])/g,'$1').replace(/\?print=print-search\b/,'').trim();
 }
-function selectedValues(name){return[...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value)}
+function eventUrl(e){
+  const u = cleanUrl(e.url || '');
+  if(/^https?:\/\//i.test(u)) return u;
+  const m = (e.description || '').match(/(?:Bron|Meer informatie):\s*(https?:\/\/[^\s\\]+)/i);
+  return m ? cleanUrl(m[1]) : '';
+}
+function linkLabel(u){
+  try{ return 'Meer info op ' + new URL(u).hostname.replace(/^www\./,'') + ' →'; }
+  catch(_){ return 'Meer informatie →'; }
+}
+function splitEmoji(s){
+  const m = (s||'').match(/^\s*((?:\p{Extended_Pictographic}️?(?:‍\p{Extended_Pictographic}️?)*|[\u{1F1E6}-\u{1F1FF}]{2})\s*)+/u);
+  if(!m) return { icon:'', text:(s||'').trim() };
+  return { icon:m[0].trim(), text:(s||'').slice(m[0].length).trim() };
+}
+
+/* ---------- parse + dedupe ---------- */
+function parseICS(text){
+  const u = unfoldICS(text);
+  const events = [...u.matchAll(/BEGIN:VEVENT([\s\S]*?)END:VEVENT/g)].map(m => {
+    const b = m[1];
+    const location = prop(b,'LOCATION');
+    const e = {
+      summary: prop(b,'SUMMARY'),
+      description: prop(b,'DESCRIPTION'),
+      location,
+      url: prop(b,'URL'),
+      start: parseLocalDate(prop(b,'DTSTART')),
+      end: parseLocalDate(prop(b,'DTEND')),
+      stamp: parseStamp(prop(b,'DTSTAMP'))
+    };
+    e.categoryRaw = prop(b,'CATEGORIES');
+    e.category = e.categoryRaw ? canonicalCategory(e.categoryRaw) : deriveCategoryFromText(e);
+    e.place = derivePlace(location);
+    return e;
+  }).filter(e => e.start).sort((a,b) => a.start - b.start);
+  return dedupe(events);
+}
+function mergeInto(hit,e){
+  const eEnd = eventEnd(e);
+  if(e.start < hit.start) hit.start = e.start;
+  if(eEnd > eventEnd(hit)) hit.end = e.end || e.start;
+  if((e.summary||'').length > (hit.summary||'').length) hit.summary = e.summary;
+  if((e.description||'').length > (hit.description||'').length) hit.description = e.description;
+  if(!hit.url && e.url) hit.url = e.url;
+  if(e.stamp && (!hit.stamp || e.stamp > hit.stamp)) hit.stamp = e.stamp;
+}
+function titleTokens(s){ return new Set((s||'').normalize('NFKD').toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || []); }
+function overlaps(a,b){ return a.start <= eventEnd(b) && eventEnd(a) >= b.start; }
+function dedupe(events){
+  const norm = s => (s||'').normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,'').toLowerCase();
+  // pass 1 — identical normalised title + overlapping date range
+  const byTitle = new Map();
+  for(const e of events){
+    const key = norm(e.summary);
+    const bucket = byTitle.get(key) || (byTitle.set(key, []), byTitle.get(key));
+    const hit = bucket.find(x => overlaps(e, x));
+    if(hit) mergeInto(hit, e); else bucket.push(e);
+  }
+  // pass 2 — same day + same place + strong title-word overlap (catches reworded copies)
+  const kept = [...byTitle.values()].flat();
+  const out = [];
+  for(const e of kept){
+    const tk = titleTokens(e.summary);
+    const hit = out.find(x => {
+      if(x.place !== e.place || x.start.toDateString() !== e.start.toDateString()) return false;
+      const xt = titleTokens(x.summary);
+      let inter = 0; for(const t of tk) if(xt.has(t)) inter++;
+      return inter >= 2 && inter / Math.min(tk.size, xt.size) >= 0.5;
+    });
+    if(hit) mergeInto(hit, e); else out.push(e);
+  }
+  return out.sort((a,b) => a.start - b.start);
+}
+
+/* ---------- filter UI ---------- */
+function selectedValues(name){ return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x => x.value); }
 function addCheckboxes(containerId,name,values){
-  const el=document.getElementById(containerId);
-  el.innerHTML=values.sort().map(v=>`<label class="check"><input type="checkbox" name="${name}" value="${safeText(v)}" checked> ${safeText(v)}</label>`).join('');
+  document.getElementById(containerId).innerHTML = values.sort((a,b)=>a.localeCompare(b,'nl'))
+    .map(v => `<label class="check"><input type="checkbox" name="${name}" value="${safeText(v)}" checked> ${safeText(v)}</label>`)
+    .join('');
 }
 function populateFilters(){
-  addCheckboxes('locationChecks','location',[...new Set(allEvents.map(e=>e.place))]);
-  addCheckboxes('typeChecks','type',[...new Set(allEvents.map(e=>e.category))]);
-  document.querySelectorAll('input[type=checkbox]').forEach(x=>x.addEventListener('change',render));
+  addCheckboxes('locationChecks','location',[...new Set(allEvents.map(e => e.place))]);
+  addCheckboxes('typeChecks','type',[...new Set(allEvents.map(e => e.category))]);
+  document.querySelectorAll('input[name=location],input[name=type],input[name=period]').forEach(x => x.addEventListener('change', render));
 }
 function activePeriod(){
-  const vals=selectedValues('period').map(Number).filter(Boolean);
-  return vals.length?Math.min(...vals):null;
+  const v = document.querySelector('input[name=period]:checked');
+  return v && v.value ? +v.value : null;
 }
+function paintPeriod(){
+  document.querySelectorAll('#periodOpts label').forEach(l => l.classList.toggle('is-on', l.querySelector('input').checked));
+}
+
+/* ---------- render ---------- */
 function render(){
-  const q=document.getElementById('q').value.trim().toLowerCase();
-  const locs=selectedValues('location'),types=selectedValues('type'),period=activePeriod();
-  const now=new Date();now.setHours(0,0,0,0);
-  let maxDate=null;if(period){maxDate=new Date(now);maxDate.setDate(maxDate.getDate()+period)}
-  const filtered=allEvents.filter(e=>e.start>=new Date(now.getTime()-86400000)).filter(e=>{
-    const hay=(e.summary+' '+e.description+' '+e.location).toLowerCase();
-    return(!q||hay.includes(q))
-      &&(!locs.length||locs.includes(e.place))
-      &&(!types.length||types.includes(e.category))
-      &&(!maxDate||e.start<=maxDate);
-  });
-  document.getElementById('count').textContent=`${filtered.length} komende ${filtered.length===1?'activiteit':'activiteiten'}`;
-  const n=(q?1:0)+(period?1:0)+((locs.length&&locs.length<document.querySelectorAll('input[name=location]').length)?1:0)+((types.length&&types.length<document.querySelectorAll('input[name=type]').length)?1:0);
-  document.getElementById('activeFilters').textContent=n?`${n} actief ${n===1?'filter':'filters'}`:'';
-  const el=document.getElementById('events');
-  if(!filtered.length){el.innerHTML='<div class="empty">Geen activiteiten gevonden met deze filters.</div>';return}
-  el.innerHTML=filtered.map(e=>{
-    const desc=cleanDescription(e.description);
-    return`<article class="card"><div class="date">${safeText(dateLabel(e))}</div><div class="title">${safeText(e.summary)}</div><div><span class="badge">${safeText(e.category)}</span><span class="badge">${safeText(e.place)}</span></div><div class="location">📍 ${safeText(e.location||e.place)}</div>${desc?`<div class="details">${safeText(desc)}</div>`:''}${eventUrl(e)?`<a class="more" href="${safeText(eventUrl(e))}" target="_blank" rel="noopener">Meer informatie →</a>`:''}</article>`;
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const locs = selectedValues('location');
+  const types = selectedValues('type');
+  const period = activePeriod();
+  const startOfToday = new Date(); startOfToday.setHours(0,0,0,0);
+  const maxDate = period ? new Date(startOfToday.getTime() + period * 86400000) : null;
+
+  const todayMs = startOfToday.getTime();
+  const dayKey = d => { const x = new Date(d); x.setHours(0,0,0,0); return x.getTime(); };
+  const filtered = allEvents
+    .filter(e => eventEnd(e) >= startOfToday)                       // keep running multi-day events visible
+    .filter(e => {
+      const hay = (e.summary + ' ' + e.description + ' ' + e.location).toLowerCase();
+      return (!q || hay.includes(q))
+        && (!locs.length || locs.includes(e.place))
+        && (!types.length || types.includes(e.category))
+        && (!maxDate || e.start <= maxDate);
+    })
+    // order by date; multi-day events that are already running slot in after
+    // today's entries instead of sitting weeks up the list at their start date
+    .sort((a, b) => {
+      const ea = Math.max(dayKey(a.start), todayMs), eb = Math.max(dayKey(b.start), todayMs);
+      if(ea !== eb) return ea - eb;
+      const oa = dayKey(a.start) < todayMs ? 1 : 0, ob = dayKey(b.start) < todayMs ? 1 : 0;
+      return oa - ob || a.start - b.start;
+    });
+
+  const countEl = document.getElementById('count');
+  countEl.textContent = `${filtered.length} ${filtered.length === 1 ? 'activiteit' : 'activiteiten'}`;
+
+  const totalLoc = document.querySelectorAll('input[name=location]').length;
+  const totalType = document.querySelectorAll('input[name=type]').length;
+  const n = (q ? 1 : 0) + (period ? 1 : 0)
+    + (locs.length && locs.length < totalLoc ? 1 : 0)
+    + (types.length && types.length < totalType ? 1 : 0);
+  document.getElementById('activeFilters').textContent = n ? `${n} actief ${n === 1 ? 'filter' : 'filters'}` : '';
+
+  paintPeriod();
+  const el = document.getElementById('events');
+  el.removeAttribute('aria-busy');
+  if(!filtered.length){
+    el.innerHTML = '<div class="empty">Geen activiteiten gevonden met deze filters.</div>';
+    return;
+  }
+  el.innerHTML = filtered.map(e => {
+    const { icon, text } = splitEmoji(e.summary);
+    const desc = cleanDescription(e.description);
+    const url = eventUrl(e);
+    return `<article class="card">
+      <div class="date">${safeText(dateLabel(e))}</div>
+      <h3 class="title">${icon ? `<span class="ico" aria-hidden="true">${safeText(icon)}</span> ` : ''}${safeText(text)}</h3>
+      <div><span class="badge">${safeText(e.category)}</span><span class="badge">${safeText(e.place)}</span></div>
+      <div class="location"><span aria-hidden="true">📍</span> ${safeText(e.location || e.place)}</div>
+      ${desc ? `<div class="details">${safeText(desc)}</div>` : ''}
+      ${url ? `<a class="more" href="${safeText(url)}" target="_blank" rel="noopener noreferrer" aria-label="${safeText(linkLabel(url).replace(/ →$/,'') + ' — ' + text)}">${safeText(linkLabel(url))}</a>` : ''}
+    </article>`;
   }).join('');
 }
-function setAll(name,state){document.querySelectorAll(`input[name="${name}"]`).forEach(x=>x.checked=state);render()}
-document.getElementById('q').addEventListener('input',render);
-document.getElementById('reset').addEventListener('click',()=>{
-  document.getElementById('q').value='';
-  document.querySelectorAll('input[name=location],input[name=type]').forEach(x=>x.checked=true);
-  document.querySelectorAll('input[name=period]').forEach(x=>x.checked=false);
+
+/* ---------- events ---------- */
+function setAll(name,state){
+  document.querySelectorAll(`input[name="${name}"]`).forEach(x => x.checked = state);
+  render();
+}
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('reset').addEventListener('click', () => {
+  document.getElementById('q').value = '';
+  document.querySelectorAll('input[name=location],input[name=type]').forEach(x => x.checked = true);
+  const allPeriod = document.querySelector('input[name=period][value=""]');
+  if(allPeriod) allPeriod.checked = true;
   render();
 });
-document.addEventListener('click',e=>{
-  if(e.target.dataset.checkall)setAll(e.target.dataset.checkall,true);
-  if(e.target.dataset.uncheckall)setAll(e.target.dataset.uncheckall,false);
-  if('period' in e.target.dataset){
-    document.querySelectorAll('input[name=period]').forEach(x=>x.checked=false);
-    if(e.target.dataset.period){
-      const cb=document.querySelector(`input[name=period][value="${e.target.dataset.period}"]`);if(cb)cb.checked=true;
-    }
-    render();
-  }
+document.addEventListener('click', e => {
+  if(e.target.dataset.checkall) setAll(e.target.dataset.checkall, true);
+  if(e.target.dataset.uncheckall) setAll(e.target.dataset.uncheckall, false);
 });
+
+/* ---------- subscribe links ---------- */
+function wireSubscribeLinks(){
+  const abs = new URL('moraira.ics', location.href).href;
+  const webcal = 'webcal://' + abs.replace(/^https?:\/\//,'');
+  document.getElementById('subApple').href = webcal;
+  document.getElementById('subGoogle').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal);
+}
+
+/* ---------- init ---------- */
+function showUpdated(){
+  const stamps = allEvents.map(e => e.stamp).filter(Boolean);
+  if(!stamps.length) return;
+  const d = new Date(Math.max(...stamps.map(s => s.getTime())));
+  document.getElementById('updated').textContent = 'Bijgewerkt op ' + fmtDateShort(d);
+}
+/* Filters: open on wide screens, collapsed on phones — until the visitor decides. */
+function wireFilterCollapse(){
+  const box = document.getElementById('filterBox');
+  const narrow = window.matchMedia('(max-width: 850px)');
+  let userSet = false;
+  box.querySelector('summary').addEventListener('click', () => { userSet = true; });
+  const sync = () => { if(!userSet) box.open = !narrow.matches; };
+  sync();
+  narrow.addEventListener('change', () => { userSet = false; sync(); });
+  window.addEventListener('load', sync);
+}
 async function init(){
+  wireSubscribeLinks();
+  wireFilterCollapse();
+  const events = document.getElementById('events');
   try{
-    const r=await fetch(ICS_URL+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
-    allEvents=parseICS(await r.text());populateFilters();render();
+    const r = await fetch(ICS_URL + '?v=' + Date.now(), { cache:'no-store' });
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    allEvents = parseICS(await r.text());
+    populateFilters();
+    showUpdated();
+    render();
   }catch(err){
-    document.getElementById('count').textContent='Kon agenda niet laden';
-    document.getElementById('events').innerHTML='<div class="error">De agenda kon niet worden geladen. Controleer of <strong>moraira.ics</strong> naast deze pagina staat.</div>';
+    document.getElementById('count').textContent = 'Kon agenda niet laden';
+    events.removeAttribute('aria-busy');
+    events.innerHTML = '<div class="error">De agenda kon nu niet worden geladen.<br><button type="button" onclick="location.reload()">Opnieuw proberen</button></div>';
     console.error(err);
   }
 }
