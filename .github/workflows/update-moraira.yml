@@ -24,8 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 icalendar python-dateutil
+         pip install requests beautifulsoup4 
+         "icalendar>=6,<7" python-dateutil
 
       - name: Update calendar
         run: python scripts/update_calendar.py
