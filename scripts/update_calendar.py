@@ -156,10 +156,9 @@ def localize_link(url=""):
     # benissa.es — elke taal -> /nl/  (werkt voor de agenda én per-evenementpagina's)
     u = re.sub(r"^(https?://)(?:www\.)?benissa\.es/(?:en|de|fr|es|va|nl)/",
                r"\1www.benissa.es/nl/", u)
-    # Teulada-Moraira feestkalender — Spaans pad -> Nederlands pad
-    u = u.replace(
-        "/es/informacion-de-la-ciudad/cultura-vida-urbana/fiestas/calendario-de-fiestas/",
-        "/nl/informatie-over-de-stad/cultuur-stadsleven/feesten/feestkalender/")
+    # Teulada-Moraira — geen bruikbare diepere agenda-URL, dus de NL-startpagina
+    u = re.sub(r"^(https?://)(?:www\.)?info-teulada-moraira\.com/.*$",
+               r"\1info-teulada-moraira.com/nl/", u)
     # xabia.org heeft geen Nederlands -> Engels i.p.v. het Spaanse www.
     u = re.sub(r"^(https?://)(?:www\.)?xabia\.org/", r"\1en.xabia.org/", u)
     return u
