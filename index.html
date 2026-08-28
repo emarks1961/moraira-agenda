@@ -51,42 +51,50 @@
     h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px;letter-spacing:-.02em}
     .lead{margin:0;font-size:17px}
 
-    .panel{margin:-18px auto 18px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
-    .searchbar{display:flex;gap:10px;align-items:end}
-    .searchbar>div:first-child{flex:1}
-    label.group-label,legend.group-label{font-size:12px;font-weight:800;color:var(--muted);display:block;margin:0 0 7px;text-transform:uppercase;letter-spacing:.05em;padding:0}
-    input[type=search]{width:100%;font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 12px;background:var(--surface);color:var(--text)}
-    input[type=search]::placeholder{color:var(--muted)}
     button{font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 14px;background:var(--brand);color:#000;font-weight:800;cursor:pointer}
     button:hover{filter:brightness(.97)}
 
-    .filters{margin-top:14px;border-top:1px solid var(--line);padding-top:4px}
-    .filters>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 2px;font-weight:800;font-size:14px}
+    /* ---- controls: search + filters ---- */
+    .controls{margin:-12px auto 12px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 3px 14px rgba(0,0,0,.05);padding:12px}
+    .search{position:relative}
+    .search .sico{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--muted);pointer-events:none}
+    .search input[type=search]{width:100%;font:inherit;font-size:15px;border:1.5px solid var(--line);border-radius:11px;padding:11px 38px 11px 40px;background:var(--surface);color:var(--text);-webkit-appearance:none}
+    .search input[type=search]::placeholder{color:var(--muted)}
+    .search input[type=search]::-webkit-search-cancel-button{display:none}
+    .search input[type=search]:focus{outline:none;border-color:var(--brand)}
+    .search .sclear{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:var(--muted);font-weight:700;font-size:13px;padding:7px 9px;border-radius:8px;cursor:pointer}
+    .search .sclear:hover{color:var(--text);background:var(--line)}
+
+    .filters{margin-top:10px}
+    .filters>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:6px 2px;font-weight:700;font-size:13px;color:var(--muted)}
     .filters>summary::-webkit-details-marker{display:none}
-    .filters>summary::after{content:"▾";transition:transform .15s;color:var(--muted)}
-    .filters[open]>summary::after{transform:rotate(180deg)}
-    .filter-grid{display:grid;grid-template-columns:1.1fr 1fr 1.4fr;gap:18px;padding-top:8px}
-    fieldset.checkgroup{border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--surface);margin:0;min-width:0}
-    .checks{display:grid;grid-template-columns:1fr;gap:7px}
-    #typeChecks{grid-template-columns:1fr 1fr}
-    .check{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
-    .check input{width:18px;height:18px;accent-color:var(--brand);cursor:pointer;flex:0 0 auto}
-    .period-opts{display:flex;flex-wrap:wrap;gap:7px}
-    .period-opts label{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;cursor:pointer;background:var(--surface)}
-    .period-opts label.is-on,.period-opts label:has(input:checked){background:var(--brand);border-color:var(--brand);color:#000}
-    .period-opts label:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-    .period-opts input{position:absolute;opacity:0;pointer-events:none}
-    .quick{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
-    .quick button{padding:7px 10px;background:var(--surface);color:var(--text);border-color:var(--line);font-size:12px}
+    .filters>summary .caret{margin-left:auto;transition:transform .15s}
+    .filters[open]>summary .caret{transform:rotate(180deg)}
+    .sum-active{background:var(--brand);color:#000;font-weight:800;font-size:11px;border-radius:999px;padding:2px 8px}
+    .sum-active:empty{display:none}
 
-    .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 12px}
-    .toolbar a{display:inline-block;text-decoration:none;font-size:13px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:8px 13px;background:var(--card)}
-    .toolbar a:hover{background:var(--surface)}
+    .filter-body{padding-top:8px}
+    .fgroup{border:0;margin:0 0 10px;padding:0;min-width:0}
+    .fgroup:last-of-type{margin-bottom:4px}
+    .fgroup>legend{font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:0;margin-bottom:6px}
+    .chips{display:flex;flex-wrap:wrap;gap:6px}
+    .chip{position:relative;display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;line-height:1;cursor:pointer;background:var(--surface);color:var(--text);user-select:none;transition:background .12s,border-color .12s,color .12s}
+    .chip:hover{border-color:var(--brand)}
+    .chip:has(input:checked),.chip.is-on{background:var(--brand);border-color:var(--brand);color:#000}
+    .chip:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+    .chip input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+    .clearlink{background:transparent;border:0;padding:4px 2px;color:var(--text);font-size:12.5px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+    .clearlink[hidden]{display:none}
 
-    .meta{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin:0 0 4px;color:var(--muted);font-size:14px}
-    .count{font-weight:800;color:var(--text)}
-    .active-filter-count{font-weight:800;color:var(--text)}
-    .subtle{color:var(--muted);font-size:12.5px;margin:0 0 16px}
+    /* ---- status bar + actions ---- */
+    .statusbar{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 9px;margin:0 2px 3px;font-size:13px;color:var(--muted)}
+    .count{font-weight:800;color:var(--text);font-size:14px}
+    .statusbar .sep{opacity:.5}
+    .statusbar .grow{flex:1 1 40px}
+    .actions{display:flex;gap:5px}
+    .actions a{text-decoration:none;font-weight:700;font-size:12px;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:4px 11px;background:var(--surface)}
+    .actions a:hover{border-color:var(--brand)}
+    .disclaimer{color:var(--muted);font-size:12px;margin:0 2px 16px}
 
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-bottom:32px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 3px 14px rgba(0,0,0,.04)}
@@ -105,11 +113,8 @@
     .sponsor-text{max-width:520px;margin:0 auto}
 
     @media(max-width:850px){
-      .filter-grid{grid-template-columns:1fr}
-      #typeChecks{grid-template-columns:1fr 1fr}
       .grid{grid-template-columns:1fr}
-      .searchbar{flex-direction:column;align-items:stretch}
-      .meta{flex-direction:column;align-items:flex-start;gap:2px}
+      .statusbar .grow{flex-basis:100%}
     }
     @media(prefers-reduced-motion:reduce){*{transition:none!important}}
   </style>
@@ -123,61 +128,55 @@
   </header>
 
   <main class="wrap" style="padding:0 16px">
-    <section class="panel" aria-label="Zoeken en filteren">
-      <div class="searchbar">
-        <div>
-          <label class="group-label" for="q">Zoeken</label>
-          <input id="q" type="search" placeholder="Bijv. tribute, fiesta, wijn…" />
-        </div>
-        <button id="reset" type="button">Wis alle filters</button>
+    <section class="controls" aria-label="Zoeken en filteren">
+      <div class="search">
+        <svg class="sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        <input id="q" type="search" placeholder="Zoek op naam, plaats of type…" aria-label="Zoeken in de agenda" />
+        <button id="qClear" type="button" class="sclear" hidden aria-label="Zoekveld wissen">✕</button>
       </div>
 
       <details class="filters" id="filterBox">
-        <summary><span>Filters — periode, locatie, type</span><span id="activeFilters" class="active-filter-count"></span></summary>
-        <div class="filter-grid">
-          <fieldset class="checkgroup">
-            <legend class="group-label">Periode</legend>
-            <div class="period-opts" id="periodOpts">
-              <label><input type="radio" name="period" value="" checked> Alles</label>
-              <label><input type="radio" name="period" value="7"> Komende week</label>
-              <label><input type="radio" name="period" value="30"> Komende maand</label>
-              <label><input type="radio" name="period" value="90"> Komende 3 maanden</label>
+        <summary>
+          <span>Filters</span>
+          <span id="activeFilters" class="sum-active"></span>
+          <span class="caret" aria-hidden="true">▾</span>
+        </summary>
+        <div class="filter-body">
+          <fieldset class="fgroup">
+            <legend>Periode</legend>
+            <div class="chips" id="periodOpts">
+              <label class="chip"><input type="radio" name="period" value="" checked> Alles</label>
+              <label class="chip"><input type="radio" name="period" value="7"> Deze week</label>
+              <label class="chip"><input type="radio" name="period" value="30"> Deze maand</label>
+              <label class="chip"><input type="radio" name="period" value="90"> 3 maanden</label>
             </div>
           </fieldset>
-
-          <fieldset class="checkgroup">
-            <legend class="group-label">Locatie</legend>
-            <div class="checks" id="locationChecks"></div>
-            <div class="quick">
-              <button type="button" data-checkall="location">Alles aan</button>
-              <button type="button" data-uncheckall="location">Alles uit</button>
-            </div>
+          <fieldset class="fgroup">
+            <legend>Locatie</legend>
+            <div class="chips" id="locationChecks"></div>
           </fieldset>
-
-          <fieldset class="checkgroup">
-            <legend class="group-label">Type activiteit</legend>
-            <div class="checks" id="typeChecks"></div>
-            <div class="quick">
-              <button type="button" data-checkall="type">Alles aan</button>
-              <button type="button" data-uncheckall="type">Alles uit</button>
-            </div>
+          <fieldset class="fgroup">
+            <legend>Type activiteit</legend>
+            <div class="chips" id="typeChecks"></div>
           </fieldset>
+          <button id="reset" type="button" class="clearlink" hidden>Alle filters wissen</button>
         </div>
       </details>
     </section>
     <script>if(window.matchMedia('(min-width: 851px)').matches){document.getElementById('filterBox').open=true;}</script>
 
-    <nav class="toolbar" aria-label="Agenda toevoegen aan je eigen app">
-      <a id="subApple" href="#">➕ Abonneer in agenda-app</a>
-      <a id="subGoogle" href="#" target="_blank" rel="noopener noreferrer">Google Agenda</a>
-      <a id="subDownload" href="./moraira.ics" download>Download .ics</a>
-    </nav>
-
-    <div class="meta">
+    <div class="statusbar">
       <span id="count" class="count" role="status" aria-live="polite">Agenda laden…</span>
+      <span class="sep" aria-hidden="true" id="updSep" hidden>·</span>
       <span id="updated"></span>
+      <span class="grow"></span>
+      <span class="actions">
+        <a id="subApple" href="#">Abonneren</a>
+        <a id="subGoogle" href="#" target="_blank" rel="noopener noreferrer">Google&nbsp;Agenda</a>
+        <a id="subDownload" href="./moraira.ics" download>Download</a>
+      </span>
     </div>
-    <p class="subtle">Tijden en programma’s kunnen wijzigen — controleer kort voor je bezoek bij de organisator.</p>
+    <p class="disclaimer">Tijden en programma’s kunnen wijzigen — controleer kort voor je bezoek bij de organisator.</p>
 
     <h2 class="sr-only">Activiteiten</h2>
     <section id="events" class="grid" aria-busy="true"></section>
@@ -289,7 +288,7 @@ function eventUrl(e){
   return m ? cleanUrl(m[1]) : '';
 }
 function linkLabel(u){
-  try{ return 'Meer info op ' + new URL(u).hostname.replace(/^www\./,'') + ' →'; }
+  try{ return 'Meer info op ' + new URL(u).hostname.replace(/^(www|[a-z]{2})\./,'') + ' →'; }
   catch(_){ return 'Meer informatie →'; }
 }
 function splitEmoji(s){
@@ -359,22 +358,25 @@ function dedupe(events){
 
 /* ---------- filter UI ---------- */
 function selectedValues(name){ return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x => x.value); }
-function addCheckboxes(containerId,name,values){
+function addChips(containerId,name,values){
   document.getElementById(containerId).innerHTML = values.sort((a,b)=>a.localeCompare(b,'nl'))
-    .map(v => `<label class="check"><input type="checkbox" name="${name}" value="${safeText(v)}" checked> ${safeText(v)}</label>`)
+    .map(v => `<label class="chip"><input type="checkbox" name="${name}" value="${safeText(v)}"> ${safeText(v)}</label>`)
     .join('');
 }
 function populateFilters(){
-  addCheckboxes('locationChecks','location',[...new Set(allEvents.map(e => e.place))]);
-  addCheckboxes('typeChecks','type',[...new Set(allEvents.map(e => e.category))]);
+  addChips('locationChecks','location',[...new Set(allEvents.map(e => e.place))]);
+  addChips('typeChecks','type',[...new Set(allEvents.map(e => e.category))]);
   document.querySelectorAll('input[name=location],input[name=type],input[name=period]').forEach(x => x.addEventListener('change', render));
 }
 function activePeriod(){
   const v = document.querySelector('input[name=period]:checked');
   return v && v.value ? +v.value : null;
 }
-function paintPeriod(){
-  document.querySelectorAll('#periodOpts label').forEach(l => l.classList.toggle('is-on', l.querySelector('input').checked));
+function paintChips(){
+  document.querySelectorAll('.chip').forEach(l => {
+    const i = l.querySelector('input');
+    if(i) l.classList.toggle('is-on', i.checked);
+  });
 }
 
 /* ---------- render ---------- */
@@ -409,14 +411,12 @@ function render(){
   const countEl = document.getElementById('count');
   countEl.textContent = `${filtered.length} ${filtered.length === 1 ? 'activiteit' : 'activiteiten'}`;
 
-  const totalLoc = document.querySelectorAll('input[name=location]').length;
-  const totalType = document.querySelectorAll('input[name=type]').length;
-  const n = (q ? 1 : 0) + (period ? 1 : 0)
-    + (locs.length && locs.length < totalLoc ? 1 : 0)
-    + (types.length && types.length < totalType ? 1 : 0);
-  document.getElementById('activeFilters').textContent = n ? `${n} actief ${n === 1 ? 'filter' : 'filters'}` : '';
+  const n = (q ? 1 : 0) + (period ? 1 : 0) + (locs.length ? 1 : 0) + (types.length ? 1 : 0);
+  document.getElementById('activeFilters').textContent = n ? String(n) : '';
+  document.getElementById('reset').hidden = n === 0;
+  document.getElementById('qClear').hidden = !q;
 
-  paintPeriod();
+  paintChips();
   const el = document.getElementById('events');
   el.removeAttribute('aria-busy');
   if(!filtered.length){
@@ -439,22 +439,19 @@ function render(){
 }
 
 /* ---------- events ---------- */
-function setAll(name,state){
-  document.querySelectorAll(`input[name="${name}"]`).forEach(x => x.checked = state);
-  render();
-}
-document.getElementById('q').addEventListener('input', render);
-document.getElementById('reset').addEventListener('click', () => {
+function clearAll(){
   document.getElementById('q').value = '';
-  document.querySelectorAll('input[name=location],input[name=type]').forEach(x => x.checked = true);
+  document.querySelectorAll('input[name=location],input[name=type]').forEach(x => x.checked = false);
   const allPeriod = document.querySelector('input[name=period][value=""]');
   if(allPeriod) allPeriod.checked = true;
   render();
+}
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('qClear').addEventListener('click', () => {
+  const q = document.getElementById('q');
+  q.value = ''; q.focus(); render();
 });
-document.addEventListener('click', e => {
-  if(e.target.dataset.checkall) setAll(e.target.dataset.checkall, true);
-  if(e.target.dataset.uncheckall) setAll(e.target.dataset.uncheckall, false);
-});
+document.getElementById('reset').addEventListener('click', clearAll);
 
 /* ---------- subscribe links ---------- */
 function wireSubscribeLinks(){
@@ -469,7 +466,8 @@ function showUpdated(){
   const stamps = allEvents.map(e => e.stamp).filter(Boolean);
   if(!stamps.length) return;
   const d = new Date(Math.max(...stamps.map(s => s.getTime())));
-  document.getElementById('updated').textContent = 'Bijgewerkt op ' + fmtDateShort(d);
+  document.getElementById('updated').textContent = 'bijgewerkt ' + fmtDateShort(d);
+  document.getElementById('updSep').hidden = false;
 }
 /* Filters: open on wide screens, collapsed on phones — until the visitor decides. */
 function wireFilterCollapse(){
