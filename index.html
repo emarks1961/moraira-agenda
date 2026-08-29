@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moraira &amp; omgeving – Agenda</title>
-  <meta name="description" content="Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia: concerten, fiestas, markten, gastronomie en cultuur. Wekelijks bijgewerkt." />
+  <title>Uit in Moraira – evenementen-agenda</title>
+  <meta name="description" content="Uit in Moraira: evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia — concerten, fiestas, markten, gastronomie en cultuur. Wekelijks bijgewerkt." />
   <meta name="theme-color" content="#d2a83e" />
   <link rel="canonical" href="https://moraira-agenda.netlify.app/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d2a83e'/%3E%3Crect x='12' y='17' width='40' height='33' rx='5' fill='%23fffdf8'/%3E%3Crect x='12' y='17' width='40' height='10' rx='5' fill='%23000'/%3E%3Crect x='20' y='11' width='5' height='11' rx='2.5' fill='%23000'/%3E%3Crect x='39' y='11' width='5' height='11' rx='2.5' fill='%23000'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23d2a83e'/%3E%3Cg stroke='%23fffdf8' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M50 17v9'/%3E%3Cpath d='M27 24l6 7'/%3E%3Cpath d='M73 24l-6 7'/%3E%3C/g%3E%3Cpath d='M28 55a22 22 0 0 1 44 0Z' fill='%23fffdf8'/%3E%3Cpath d='M19 55h62' stroke='%23fffdf8' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M22 69q9-7 18 0t18 0 18 0' fill='none' stroke='%23fffdf8' stroke-width='6.5' stroke-linecap='round'/%3E%3C/svg%3E" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="nl_NL" />
-  <meta property="og:title" content="Moraira & omgeving – Evenementen-agenda" />
-  <meta property="og:description" content="Concerten, fiestas, markten en cultuur in Moraira, Teulada, Benissa en Xàbia. Wekelijks bijgewerkt." />
+  <meta property="og:title" content="Uit in Moraira" />
+  <meta property="og:description" content="Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia. Concerten, fiestas, markten en cultuur — wekelijks bijgewerkt." />
   <meta property="og:url" content="https://moraira-agenda.netlify.app/" />
   <meta property="og:image" content="https://moraira-agenda.netlify.app/villa-herrera.webp" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -46,10 +46,15 @@
     a{color:inherit}
     :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 
-    .hero{background:var(--brand);color:#000;padding:28px 20px 26px;border-bottom:1px solid rgba(0,0,0,.12)}
+    .hero{background:var(--brand);color:#000;padding:24px 20px 22px;border-bottom:1px solid rgba(0,0,0,.12)}
     .wrap{max-width:1100px;margin:0 auto}
-    h1{font-size:clamp(28px,5vw,46px);margin:0 0 8px;letter-spacing:-.02em}
-    .lead{margin:0;font-size:17px}
+    .brand{display:flex;align-items:center;gap:15px}
+    .brand-mark{flex:0 0 auto;width:clamp(46px,11vw,58px);height:clamp(46px,11vw,58px);display:block}
+    .brand-mark svg{width:100%;height:100%;display:block}
+    h1{margin:0;font-weight:800;line-height:1;letter-spacing:-.01em;color:#000}
+    h1 .pre{display:block;font-size:clamp(11px,2.3vw,13px);font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#5c4708;margin:0 0 4px}
+    h1 .big{font-size:clamp(27px,6vw,42px)}
+    .lead{margin:6px 0 0;font-size:clamp(13px,2.5vw,16px);color:#000}
 
     button{font:inherit;border:1px solid var(--line);border-radius:11px;padding:11px 14px;background:var(--brand);color:#000;font-weight:800;cursor:pointer}
     button:hover{filter:brightness(.97)}
@@ -121,9 +126,27 @@
 </head>
 <body>
   <header class="hero">
-    <div class="wrap">
-      <h1>Moraira &amp; omgeving</h1>
-      <p class="lead">Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia</p>
+    <div class="wrap brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#fffdf8"/>
+          <g fill="none" stroke="#d2a83e" stroke-width="3.6" stroke-linecap="round">
+            <line x1="50" y1="17" x2="50" y2="26"/>
+            <line x1="28" y1="25" x2="33.5" y2="32"/>
+            <line x1="72" y1="25" x2="66.5" y2="32"/>
+            <line x1="15" y1="43" x2="23.5" y2="46"/>
+            <line x1="85" y1="43" x2="76.5" y2="46"/>
+          </g>
+          <path d="M27 56a23 23 0 0 1 46 0Z" fill="#d2a83e"/>
+          <line x1="19" y1="56" x2="81" y2="56" stroke="#d2a83e" stroke-width="3.6" stroke-linecap="round"/>
+          <path d="M19 66.5q7.75-6.5 15.5 0t15.5 0 15.5 0 15.5 0" fill="none" stroke="#d2a83e" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M25 76q6.5-5.5 13 0t13 0 13 0" fill="none" stroke="#d2a83e" stroke-width="2.8" stroke-linecap="round" opacity=".6"/>
+        </svg>
+      </span>
+      <div>
+        <h1><span class="pre">Uit in</span> <span class="big">Moraira</span></h1>
+        <p class="lead">Evenementen-agenda voor Moraira, Teulada, Benissa en Xàbia</p>
+      </div>
     </div>
   </header>
 
