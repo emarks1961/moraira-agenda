@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 import hashlib
 import json
 import re
+import unicodedata
 
 import requests
 from bs4 import BeautifulSoup
@@ -28,9 +29,15 @@ HEADERS = {
 # Bronnen: Moraira/Teulada eerst, daarna relevante plaatsen in de omgeving.
 SOURCES = [
     {
-        "name": "Teulada-Moraira officiële feestkalender",
-        "url": "https://info-teulada-moraira.com/es/informacion-de-la-ciudad/cultura-vida-urbana/fiestas/calendario-de-fiestas/",
+        "name": "Turismo Teulada-Moraira (officiële agenda)",
+        "url": "https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=maseventos_coconut&lang=4",
         "place": "Moraira / Teulada",
+        "priority": 1,
+    },
+    {
+        "name": "Auditori Teulada Moraira",
+        "url": "https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=esdevs_complet",
+        "place": "Teulada",
         "priority": 1,
     },
     {
@@ -86,12 +93,12 @@ MONTHS = {
 # ---------------------------------------------------------------------------
 CANON = [
     ("Fiesta & traditie", r"fiesta|festes|festa|traditie|vuurwerk|processie|procesi|romer|moros|cristian|ofrenda|desfil|praalwagen|bloemenoffer|correfoc|castell|mascleta|mascletà|\bcolla|dolçaina|dansa|nit de foc|barraca|penya|peña|bous|toro"),
-    ("Muziek",            r"muziek|music|musica|concert|concierto|\bdj\b|orquesta|tribut|\bband\b|rondalla|discomovil|discomóvil|\bjam\b|cantada|coral|simfòn|simfon"),
+    ("Muziek",            r"muziek|\bmusic\b|\bmusica\b|\bmúsica\b|concert|concierto|\bdj\b|orquesta|tribut|\bband\b|rondalla|discomovil|discomóvil|\bjam\b|cantada|coral|simfòn|simfon"),
     ("Familie",           r"famili|kinder|\bkids\b|infantil|niñ|petorro|marionet|titell|bebeteca|nadó|contacont|cuentacuent|taller infantil"),
-    ("Sport & buiten",    r"sport|deportiv|esportiv|\brace\b|regatt|regata|carrera|cursa|\btrail\b|marcha|petanca|running|senderis|excursi|caminata|triatl|trixab|trixàb|desafí|desafio|palada|natació|nataci|ciclis"),
-    ("Gastronomie & wijn",r"gastro|wijn|\bwine\b|\bvino\b|moscat|\btapa|paella|gourmet|cerveza|oktoberfest|degust|\benot|apitur|apicultura|cuina"),
-    ("Theater & film",    r"\bfilm|\bcine\b|theater|teatro|comed|\bmagic|\bmago\b|circ|\bshow\b|espectacul|entertain|monolog"),
-    ("Kunst & cultuur",   r"kunst|\bart\b|expos|cultuur|cultura|escultura|sculpt|museo|museu|\bfoto|exfil|monument|pintura|conferenc|xerrada|charla|jornada|\blibro|\bllibre|lectur|literat|biblioteca|\bpoes|\bpoem|recital|taller"),
+    ("Sport & buiten",    r"sport|deporte|deportiv|esportiv|\brace\b|regatt|regata|carrera|cursa|\btrail\b|marcha|petanca|padel|pádel|running|senderis|excursi|caminata|triatl|trixab|trixàb|desafí|desafio|palada|natació|nataci|ciclis|healthy"),
+    ("Gastronomie & wijn",r"gastro|wijn|\bwine\b|\bvino\b|\bvinos\b|\bcata\b|catas|moscat|\btapa|paella|gourmet|cerveza|oktoberfest|degust|\benot|apitur|apicultura|cuina|cocteler|coctería"),
+    ("Theater & film",    r"\bfilm|\bcine\b|cinema|theater|teatro|comed|\bmagic|\bmago\b|\bcirc|\bshow\b|espectacul|entertain|monolog|\bballet|\bdansa\b|musical|[oó]pera|flauta mágica"),
+    ("Kunst & cultuur",   r"kunst|\bart\b|expos|exhibition|exposition|cultuur|cultura|escultura|sculpt|museo|museu|\bfoto|exfil|monument|pintura|conferenc|xerrada|charla|jornada|\blibro|\bllibre|lectur|literat|biblioteca|\bpoes|\bpoem|recital|taller|intervenci"),
     ("Markt & winkelen",  r"markt|mercad|winkel|feria|fira|comercio|rastro|artesan"),
     ("Natuur & rondleiding", r"natuur|rondleiding|wandel|\bwalk\b|\bruta\b|sender|\bpaseo|maanlicht|guided|visita guiada|astronom"),
 ]
@@ -108,6 +115,8 @@ def canonical_category(*parts):
 # Plaats-normalisatie — zelfde buckets als de website.
 def place_of(location=""):
     s = (location or "").lower()
+    if "auditori" in s:            # het Auditori Teulada Moraira staat in Teulada
+        return "Teulada"
     if "moraira" in s:
         return "Moraira"
     if "teulada" in s:
@@ -132,6 +141,39 @@ def get_soup(url):
 
 def clean(s):
     return re.sub(r"\s+", " ", (s or "")).strip()
+
+
+_TITLE_SMALL = {"de", "del", "la", "el", "y", "en", "a", "the", "of", "and", "les",
+                "dels", "i", "van", "der", "das", "le", "des", "als", "por", "para",
+                "to", "in", "on", "at", "for", "with", "from", "by", "las", "los", "un", "una"}
+
+
+def tidy_title(t):
+    """SHOUTY scraper-titels -> nette titelkast; heel lange titels inkorten.
+    Alleen bedoeld voor de nieuwe Teulada-bronnen (niet globaal)."""
+    t = clean(t).rstrip(". ")
+    letters = [c for c in t if c.isalpha()]
+    if letters and sum(c.isupper() for c in letters) / len(letters) > 0.7:
+        out, seen = [], False
+        for w in re.split(r"(\s+)", t):
+            if not w.strip():
+                out.append(w)
+                continue
+            bare = w.strip(".,;:!?()[]«»\"'").lower()
+            keep_acr = (not any(c.isdigit() for c in w)) and (
+                re.fullmatch(r"[IVXLCDM]{2,}", w.upper())
+                or (len(w) <= 4 and not re.search(r"[aeiouáéíóúü]", w, re.I)))
+            if seen and bare in _TITLE_SMALL:
+                out.append(w.lower())
+            elif keep_acr:
+                out.append(w.upper())
+            else:
+                out.append(w[:1].upper() + w[1:].lower())
+            seen = True
+        t = "".join(out)
+    if len(t) > 78:
+        t = t[:78].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    return t
 
 
 def clean_link(url=""):
@@ -199,7 +241,7 @@ def stable_uid(title, start, location):
     return hashlib.sha1(key.encode("utf-8")).hexdigest() + "@moraira-calendar"
 
 
-def event_dict(title, start, end=None, location="", description="", url="", source="", category=None, stamp=None):
+def event_dict(title, start, end=None, location="", description="", url="", source="", category=None, stamp=None, place=None):
     title = clean(title)
     if not title or not start:
         return None
@@ -212,7 +254,7 @@ def event_dict(title, start, end=None, location="", description="", url="", sour
         "start": start,
         "end": end,
         "location": location,
-        "place": place_of(location),
+        "place": place or place_of(location),
         "description": description,
         "url": localize_link(clean_link(url)),
         "source": source,
@@ -345,6 +387,129 @@ def extract_benitatxell_cards(soup, source):
     return [x for x in found if x]
 
 
+# ---------------------------------------------------------------------------
+# Teulada-Moraira: officiële toeristische agenda + het Auditori
+# ---------------------------------------------------------------------------
+SP_MONTHS = {
+    # Spaans
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
+    "julio": 7, "agosto": 8, "septiembre": 9, "setiembre": 9, "octubre": 10,
+    "noviembre": 11, "diciembre": 12,
+    # Valenciaans / Catalaans
+    "gener": 1, "febrer": 2, "març": 3, "maig": 5, "juny": 6, "juliol": 7,
+    "agost": 8, "setembre": 9, "novembre": 11, "desembre": 12,
+}
+SP_WEEKDAYS = (r"lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bado|domingo|"
+               r"dilluns|dimarts|dimecres|dijous|divendres|dissabte|diumenge")
+
+
+def _parse_es_date(text):
+    """'12/08/2026' of '12 de agosto de 2026' -> datetime (tz Europe/Madrid)."""
+    t = clean(text).lower()
+    m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", t)
+    if m:
+        try:
+            return datetime(int(m.group(3)), int(m.group(2)), int(m.group(1)), tzinfo=TZ)
+        except ValueError:
+            return None
+    m = re.search(r"(\d{1,2})\s+d[e']?\s*([a-zà-ú]+)\s+d[e']?\s*(\d{4})", t)
+    if m:
+        month = SP_MONTHS.get(m.group(2)) or MONTHS.get(m.group(2)[:3])
+        if month:
+            try:
+                return datetime(int(m.group(3)), month, int(m.group(1)), tzinfo=TZ)
+            except ValueError:
+                return None
+    return None
+
+
+def _apply_time(dt, text):
+    m = re.search(r"\b(\d{1,2})(?:[:.h](\d{2}))?\s*h\b", text or "", re.I)
+    if not m or not dt:
+        return dt
+    h, mn = int(m.group(1)), int(m.group(2) or 0)
+    return dt.replace(hour=h, minute=mn) if 0 <= h <= 23 and 0 <= mn <= 59 else dt
+
+
+def _tm_place(text):
+    s = (text or "").lower()
+    if "auditori" in s:
+        return "Teulada"
+    if any(k in s for k in ("moraira", "el portet", "ampolla", "senieta", "senyoret", "castell de moraira")):
+        return "Moraira"
+    if any(k in s for k in ("riurau", "teulada", "sant vicent", "font santa", "espai la")):
+        return "Teulada"
+    return "Moraira"
+
+
+def extract_ttm_events(soup, source):
+    found = []
+    for h2 in soup.select("h2.titolarCoconut"):
+        a = h2.find("a", href=True)
+        if not a:
+            continue
+        title = tidy_title(a.get_text(" "))
+        card = h2.find_parent("div", class_="dins") or h2.parent
+        desc = clean(card.select_one(".defora").get_text(" ")) if card and card.select_one(".defora") else ""
+        fecha = clean(card.select_one(".fechaCat").get_text(" ")) if card and card.select_one(".fechaCat") else ""
+        dates = re.findall(r"\d{1,2}/\d{1,2}/\d{4}", fecha)
+        if not title or not dates:
+            continue
+        st = _apply_time(_parse_es_date(dates[0]), desc)
+        en = _parse_es_date(dates[-1]) if len(dates) > 1 else st
+        if not st:
+            continue
+        cat = clean(re.sub(r".*\d{4}", "", fecha)).strip(" -·|")
+        blob = (title + " " + desc).lower()
+        # Concerten in het Auditori staan met hun echte (Spaanse) titel al in de
+        # Auditori-bron; laat de vertaalde turismo-variant vallen om dubbels te
+        # voorkomen. Theater/musicals/exposities houden we hier juist.
+        if "auditori" in blob and re.search(r"\bconciert|\bconcert\b", blob):
+            continue
+        url = urljoin(source["url"], a["href"])
+        if "lang=" not in url:
+            url += ("&" if "?" in url else "?") + "lang=4"
+        pl = _tm_place(blob)
+        loc = "Auditori Teulada Moraira" if "auditori" in blob else pl
+        found.append(event_dict(title, st, en, loc, desc, url, source["name"], cat, place=pl))
+    return [x for x in found if x]
+
+
+def extract_atm_events(soup, source):
+    found = []
+    for li in soup.select("li.esdeveniment"):
+        data_el = li.select_one(".xunguiData")
+        defora = li.select_one(".defora")
+        if not data_el or not defora:
+            continue
+        st = _parse_es_date(data_el.get_text(" "))
+        if not st:
+            continue
+        link_el = defora.find("a", href=True)
+        raw = clean(defora.get_text(" "))
+        raw = clean(re.sub(r"\s*ver m[aá]s\s*$", "", raw, flags=re.I))
+        # De DOLIA/wijnproeverij-subevents zitten al in de turismo-agenda als één "Alere DOLIA"
+        if re.search(r"\balere\b|\bdolia\b", raw, re.I):
+            continue
+        st = _apply_time(st, raw)
+        # titel afleiden uit de (beschrijvende) tekst: leidende tijd weg, dan
+        # knippen bij weekdag / "N de maand" / citaat / eerste zin-einde
+        body = re.sub(r"^\s*\d{1,2}\s*[:.h]?\d{0,2}\s*h\.?\s*", "", raw)
+        title = re.split(
+            r"\s+(?:" + SP_WEEKDAYS + r")\b"
+            r"|,?\s+\d{1,2}\s*,?\s+d[e']?\s*(?:" + "|".join(SP_MONTHS) + r")\b"
+            r"|\.\s+[A-ZÁÉÍÓÚ«\"]",
+            body, maxsplit=1, flags=re.I)[0]
+        title = tidy_title(clean(title).rstrip(".,-–·:") or body[:80])
+        url = urljoin(source["url"], link_el["href"]) if link_el else source["url"]
+        found.append(event_dict(title, st, st, "Auditori Teulada Moraira", raw, url,
+                                source["name"], place="Teulada"))
+    return [x for x in found if x]
+
+
+SPECIAL_SOURCES = ("turismoteuladamoraira.com", "auditoriteuladamoraira")
+
+
 def collect():
     all_events = []
     status = []
@@ -352,12 +517,19 @@ def collect():
         try:
             soup = get_soup(source["url"])
             before = len(all_events)
-            all_events.extend(extract_jsonld(soup, source))
-            all_events.extend(extract_links_with_jsonld(soup, source))
-            if "xabia.org" in source["url"]:
+            u = source["url"]
+            special = any(s in u for s in SPECIAL_SOURCES)
+            if not special:
+                all_events.extend(extract_jsonld(soup, source))
+                all_events.extend(extract_links_with_jsonld(soup, source))
+            if "xabia.org" in u:
                 all_events.extend(extract_xabia_text(soup, source))
-            if "elpoblenoudebenitatxell.com" in source["url"]:
+            if "elpoblenoudebenitatxell.com" in u:
                 all_events.extend(extract_benitatxell_cards(soup, source))
+            if "turismoteuladamoraira.com" in u:
+                all_events.extend(extract_ttm_events(soup, source))
+            if "auditoriteuladamoraira" in u:
+                all_events.extend(extract_atm_events(soup, source))
             status.append((source["name"], len(all_events) - before, "OK"))
         except Exception as e:
             status.append((source["name"], 0, f"FOUT: {e}"))
@@ -461,12 +633,17 @@ def in_window(item):
     return (TODAY - timedelta(days=PAST_GRACE_DAYS)) <= d and s <= (TODAY + timedelta(days=FUTURE_HORIZON_DAYS))
 
 
+def _deaccent(s):
+    return "".join(c for c in unicodedata.normalize("NFKD", (s or "").lower())
+                   if not unicodedata.combining(c))
+
+
 def _norm_title(s):
-    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+    return re.sub(r"[^a-z0-9]+", "", _deaccent(s))
 
 
 def _title_tokens(s):
-    return set(re.findall(r"[a-z0-9]{3,}", (s or "").lower()))
+    return set(re.findall(r"[a-z0-9]{3,}", _deaccent(s)))
 
 
 def _overlap(a, b):
@@ -478,12 +655,17 @@ def _score(item):
     return (2 if item["place"] in ("Moraira", "Teulada") else 1, len(item["description"]))
 
 
+def _has_emoji(s):
+    return bool(re.search(r"[\U0001F000-\U0001FAFF☀-➿←-⇿⬀-⯿]", s or ""))
+
+
 def _merge(hit, e):
     if as_d(e["start"]) < as_d(hit["start"]):
         hit["start"] = e["start"]
     if as_d(eff_end(e)) > as_d(eff_end(hit)):
         hit["end"] = e.get("end") or e["start"]
-    if len(e["title"]) > len(hit["title"]):
+    # betere titel: eerst een met emoji (gecureerd), dan de langere
+    if (_has_emoji(e["title"]), len(e["title"])) > (_has_emoji(hit["title"]), len(hit["title"])):
         hit["title"] = e["title"]
     if len(e["description"]) > len(hit["description"]):
         hit["description"] = e["description"]
@@ -494,7 +676,9 @@ def _merge(hit, e):
         hit["place"] = e["place"]
     if e["stamp"] and (not hit["stamp"] or e["stamp"] > hit["stamp"]):
         hit["stamp"] = e["stamp"]
-    hit["category"] = canonical_category(hit["category"], hit["title"], hit["description"])
+    # herbereken categorie uit de (samengevoegde) titel+tekst, niet uit het oude
+    # label — anders blijft een verkeerd label ("Muziek") aan zichzelf plakken
+    hit["category"] = canonical_category(hit["title"], hit["description"])
 
 
 def dedupe(items):
