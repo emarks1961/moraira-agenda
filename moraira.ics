@@ -19,6 +19,20 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Musical: the Sound of Music
+DTSTART;TZID=Europe/Madrid:20261031T000000
+DTEND;TZID=Europe/Madrid:20261101T000000
+DTSTAMP:20261007T132512Z
+UID:01ffebc44db2856779af050d98f42a7bf19bd47d@moraira-calendar
+CATEGORIES:Muziek
+DESCRIPTION:Saturday 31 October and Sunday 1 November at the Auditori Teul
+ ada Moraira
+LOCATION:Auditori Teulada Moraira
+TRANSP:TRANSPARENT
+URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
+ esdeveniments_coconut&idEsdev=2007&title=musical-the-sound-of-music&lang=4
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Túnel del Terror en PlayJove
 DTSTART;TZID=Europe/Madrid:20261030T000000
 DTEND;TZID=Europe/Madrid:20261030T020000
@@ -41,60 +55,26 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-02
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Cuentacuentos infantil con marionetas: Contes que desfan nucs
+DTSTART;TZID=Europe/Madrid:20261120T000000
+DTEND;TZID=Europe/Madrid:20261120T020000
+DTSTAMP:20261007T132512Z
+UID:06248457062caa20494ca9fccb6ab14d210deef6@moraira-calendar
+CATEGORIES:Familie
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:"A les 8 al bar Eusebi" de Salvi Danés
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:06952b87e30eb7b2b5be950307c8cd0d74c3b2a5@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-23
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Brink Band Jam
-DTSTART;TZID=Europe/Madrid:20260921T173000
-DTEND;TZID=Europe/Madrid:20260921T193000
-DTSTAMP:20260826T100737Z
-UID:0f9cba4f9d00f0772a63a7ea8f425aaf61f663f1@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎉 "Festa de l'Escaldà" · Xàbia
-DTSTART;TZID=Europe/Madrid:20260920T000000
-DTEND;TZID=Europe/Madrid:20260920T020000
-DTSTAMP:20260829T180535Z
-UID:1015c298e6f3b3e4445efd7e461ce429c8f3c330@moraira-calendar
-CATEGORIES:Fiesta & traditie
-LOCATION:Xàbia
-TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Proud Tina (Tina Turner)
-DTSTART;TZID=Europe/Madrid:20260919T180000
-DTEND;TZID=Europe/Madrid:20260919T200000
-DTSTAMP:20260826T100737Z
-UID:1038ff84a0a7f74fda175e73d302e8e91d23f765@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Sesión Club de Lectura en Valencià: El llibre de meravelles de V
- icent Andrés Estellés
-DTSTART;TZID=Europe/Madrid:20260921T000000
-DTEND;TZID=Europe/Madrid:20260921T020000
-DTSTAMP:20260829T180535Z
-UID:117963f360c559274082869d12a8964435149f4b@moraira-calendar
-CATEGORIES:Kunst & cultuur
-LOCATION:Xàbia
-TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Feria de Artesanía de Autor®
@@ -106,6 +86,18 @@ CATEGORIES:Markt & winkelen
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-09
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Proyección cinematográfica “LA SUCIA” y coloquio con los dir
+ ectores Bàrbara Mestanza y Marc Pujolar.
+DTSTART;TZID=Europe/Madrid:20261130T000000
+DTEND;TZID=Europe/Madrid:20261130T020000
+DTSTAMP:20261007T132512Z
+UID:1467e8b2a027bc2d4b138e36fe95a8b74c39b5b1@moraira-calendar
+CATEGORIES:Theater & film
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Madness Tribute
@@ -144,7 +136,7 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎶 Divina Pastora & Cantada a la Fresca
 DTSTART;VALUE=DATE:20260918
-DTEND;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
 DTSTAMP:20260826T100737Z
 UID:1d3230985d55ba53d3b0534b827efb87058b6b92@moraira-calendar
 CATEGORIES:Fiesta & traditie
@@ -156,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:Tiempo Cálido
 DTSTART;TZID=Europe/Madrid:20261001T000000
 DTEND;TZID=Europe/Madrid:20261114T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:1f3d1b08bb02f2abf646dfeac8d19b69475b1722@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -182,7 +174,7 @@ BEGIN:VEVENT
 SUMMARY:"Hispania Sacra" de Carmenchu Alemán
 DTSTART;TZID=Europe/Madrid:20261024T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:2420fba767d22c0557b7d09986f46e5519178f1b@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -200,17 +192,6 @@ CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-16
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Kool & The Gang Tribute
-DTSTART;TZID=Europe/Madrid:20260917T180000
-DTEND;TZID=Europe/Madrid:20260917T200000
-DTSTAMP:20260826T100737Z
-UID:251755b8b20520e402f13bf37b50a23b853f8445@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Presentación del libro: Las siete palabras de José Albi de Franc
@@ -250,27 +231,18 @@ URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
  esdeveniments_coconut&idEsdev=2080&title=alzheimers-charity-walk&lang=4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Nit d’Estellés i de la Poesia: recital de poemes i sopar de cab
- asset
-DTSTART;TZID=Europe/Madrid:20260918T000000
-DTEND;TZID=Europe/Madrid:20260918T020000
-DTSTAMP:20260829T180535Z
-UID:29b81fe8aed9eb53a742461aaa4e49ef1ae2b693@moraira-calendar
-CATEGORIES:Kunst & cultuur
-LOCATION:Xàbia
+SUMMARY:October 9\, Valencian Community Day
+DTSTART;TZID=Europe/Madrid:20261005T000000
+DTEND;TZID=Europe/Madrid:20261030T000000
+DTSTAMP:20261007T132512Z
+UID:2dd91663f539d3febb7cf2169802513fca47aace@moraira-calendar
+CATEGORIES:Overig
+DESCRIPTION:October 5?30 in Teulada and Moraira
+LOCATION:Moraira
 TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Tribute to Nino Bravo
-DTSTART;TZID=Europe/Madrid:20260919T220000
-DTEND;TZID=Europe/Madrid:20260920T000000
-DTSTAMP:20260826T100737Z
-UID:2d561a4542d10cca7ebeede502eca5020388b8c6@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Centre d'Art Taller Ivars\, Benissa
-TRANSP:TRANSPARENT
-URL:https://www.benissa.es/nl/agenda/
+URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
+ esdeveniments_coconut&idEsdev=2087&title=october-9-valencian-community-day
+ &lang=4
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Experiencia de Apiturismo
@@ -282,17 +254,6 @@ CATEGORIES:Gastronomie & wijn
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-23
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Depeche Mode Tribute
-DTSTART;TZID=Europe/Madrid:20260916T180000
-DTEND;TZID=Europe/Madrid:20260916T200000
-DTSTAMP:20260826T100737Z
-UID:2e6c4637b37fd823a965f2ba97f08c1b57c6b7da@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Healthy Teulada Moraira
@@ -321,17 +282,6 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎵 Boney M Experience
-DTSTART;TZID=Europe/Madrid:20260918T180000
-DTEND;TZID=Europe/Madrid:20260918T200000
-DTSTAMP:20260826T100737Z
-UID:34ae2f333184ff6b05ea1daf821f06a1f4988d67@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:🎵 Just Us
 DTSTART;TZID=Europe/Madrid:20260930T160000
 DTEND;TZID=Europe/Madrid:20260930T180000
@@ -343,31 +293,26 @@ TRANSP:TRANSPARENT
 URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Your Local Shop on the Street "bye Bye Verano"
-DTSTART;TZID=Europe/Madrid:20260919T000000
-DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260916T113534Z
-UID:394486478454ec33bef18966880ddaf7a02654be@moraira-calendar
-CATEGORIES:Overig
-DESCRIPTION:Saturday 19 September\, at 10.00 am\, on Calle Dr. Calatayud\,
-  Moraira.
-LOCATION:Moraira
-TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2076&title=your-local-shop-on-the-street-bye
- -bye-verano&lang=4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Presentación del libro : Els periòdics escolars de Xàbia de Fra
- ncesc Reus i Boyd-Swan
-DTSTART;TZID=Europe/Madrid:20260916T000000
-DTEND;TZID=Europe/Madrid:20260916T020000
-DTSTAMP:20260829T180535Z
-UID:3c32b770da022e0a0144c178e05e6e3ab5a2ca9d@moraira-calendar
-CATEGORIES:Kunst & cultuur
+SUMMARY:Germanes de Shakespeare. Recital poético y musical.
+DTSTART;TZID=Europe/Madrid:20261121T000000
+DTEND;TZID=Europe/Madrid:20261121T020000
+DTSTAMP:20261007T132512Z
+UID:37e24294a1dccee736fc9e7eeb1ecee180f7096c@moraira-calendar
+CATEGORIES:Theater & film
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Celebración: Dia de los Derechos de la Infancia y Adolescencia
+DTSTART;TZID=Europe/Madrid:20261122T000000
+DTEND;TZID=Europe/Madrid:20261122T020000
+DTSTAMP:20261007T132512Z
+UID:434f569c90d05ed0e46e7a2dea5b723da285ed52@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Jornada Xàbia Emprén: Taller De problema a Idea
@@ -381,24 +326,9 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:CANTADA A LA FRESCA. Songs in the open air. Festival Divina Pastor
- a
-DTSTART;TZID=Europe/Madrid:20260919T000000
-DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260916T113534Z
-UID:46d7ea98ef2b30268d18b39e5e4d519299810eef@moraira-calendar
-CATEGORIES:Muziek
-DESCRIPTION:Saturday 19 September in the historic centre of Teulada
-LOCATION:Teulada
-TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2071&title=cantada-a-la-fresca-songs-in-the-
- open-air-festival-divina-pastora&lang=4
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:🖼️ XXXVIII EXFILNUM
 DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
 DTSTAMP:20260826T100737Z
 UID:47329a56e6617399b80ae661cacdb30f9de97e48@moraira-calendar
 CATEGORIES:Kunst & cultuur
@@ -407,20 +337,15 @@ TRANSP:TRANSPARENT
 URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2nd Coastal and Seabed Clean-up Day
-DTSTART;TZID=Europe/Madrid:20260920T000000
-DTEND;TZID=Europe/Madrid:20260920T020000
-DTSTAMP:20260916T113534Z
-UID:49e371adeab7ea399372f46905fc2ea23a463eca@moraira-calendar
-CATEGORIES:Overig
-DESCRIPTION:Sunday\, 20 September at 9.00 am on the Castle EsplanadeSUNDAY
-  20 SEPTEMBER AT 9.00 AM ON THE CASTLE ESPLANADE. 2nd Coastal and Seabed C
- lean-up Day. Registration: via QR code Limited places available
-LOCATION:Moraira
+SUMMARY:Presentación de los 2 últimos libros de Adriana Serlik
+DTSTART;TZID=Europe/Madrid:20261126T000000
+DTEND;TZID=Europe/Madrid:20261126T020000
+DTSTAMP:20261007T132512Z
+UID:4a3c7ab0e762fbb2c70907663fc1ceecc9b19db8@moraira-calendar
+CATEGORIES:Kunst & cultuur
+LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2070&title=2nd-coastal-and-seabed-clean-up-d
- ay&lang=4
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Concierto de Zarzuela. Banda CAM Xàbia y Ars Nova
@@ -434,32 +359,10 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-02
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎵 The Jack (AC/DC)
-DTSTART;TZID=Europe/Madrid:20260920T180000
-DTEND;TZID=Europe/Madrid:20260920T200000
-DTSTAMP:20260826T100737Z
-UID:4c2d6ae3d2990731b94f3f3ed3898642a05ed344@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Rafa & Janyssha
-DTSTART;TZID=Europe/Madrid:20260919T160000
-DTEND;TZID=Europe/Madrid:20260919T180000
-DTSTAMP:20260826T100737Z
-UID:4f0aa45d99ae2e79b70caccd830b8679d0e83c60@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Festival de Fotografía "Ojos Rojos"
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:5140e8cf3f85a3bd37ecee4d1868d2932918db18@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -481,7 +384,7 @@ BEGIN:VEVENT
 SUMMARY:Campeonato de Culturismo
 DTSTART;TZID=Europe/Madrid:20261003T000000
 DTEND;TZID=Europe/Madrid:20261003T020000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:52c7fa5fe5a5c8ae2fe19280413ef5226cabb9df@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:Campeonato de Culturismo. Valencia CUP NPC. Sábado 3 de octub
@@ -515,6 +418,18 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-02
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Visita guiada de Todos los Santos. Ermita de Sant Joan y Antiguo C
+ ementerio
+DTSTART;TZID=Europe/Madrid:20261101T000000
+DTEND;TZID=Europe/Madrid:20261101T020000
+DTSTAMP:20261007T132512Z
+UID:57e7de2e99270936cf3ea23bd2226cbb40592c61@moraira-calendar
+CATEGORIES:Natuur & rondleiding
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Cuentacuentos infantil: Los alimentos mágicos
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261023T020000
@@ -540,12 +455,57 @@ BEGIN:VEVENT
 SUMMARY:"Era mentira" de Carol Galiñanes
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:67339559a5674080b0cfd4781a2462a9518add2d@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Riurau Dansa Film Festival
+DTSTART;TZID=Europe/Madrid:20261116T000000
+DTEND;TZID=Europe/Madrid:20261116T020000
+DTSTAMP:20261007T132512Z
+UID:68ea1a47665a9c4e170d626570d2be67bf96b627@moraira-calendar
+CATEGORIES:Fiesta & traditie
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La magia de la lectura con Mágica-Majo: sesiones de lectura\, val
+ ores y talleres creativos.
+DTSTART;TZID=Europe/Madrid:20261127T000000
+DTEND;TZID=Europe/Madrid:20261127T020000
+DTSTAMP:20261007T132512Z
+UID:69b212e7b6060cd1f6ce5ef731a65d6e33c51a48@moraira-calendar
+CATEGORIES:Kunst & cultuur
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:XI Festival Xàbia Negra
+DTSTART;TZID=Europe/Madrid:20261106T000000
+DTEND;TZID=Europe/Madrid:20261108T000000
+DTSTAMP:20261007T132512Z
+UID:6c12cd82e137ba24f645cb27dbb599fa3e8e4287@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Música
+DTSTART;TZID=Europe/Madrid:20261115T000000
+DTEND;TZID=Europe/Madrid:20261115T020000
+DTSTAMP:20261007T132512Z
+UID:6d91b9a3433eb3c79d9667de85da462201aadfbf@moraira-calendar
+CATEGORIES:Muziek
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 Madonna Tribute
@@ -557,17 +517,6 @@ CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
 URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:VI Feria de Stocks Comarcal
-DTSTART;TZID=Europe/Madrid:20260919T000000
-DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260829T180535Z
-UID:6e49e3907a2eef06348cae49ba70416f2914e466@moraira-calendar
-CATEGORIES:Markt & winkelen
-LOCATION:Xàbia
-TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Exposición Entre Azules
@@ -595,7 +544,7 @@ BEGIN:VEVENT
 SUMMARY:I Teulada Moraira Fest
 DTSTART;TZID=Europe/Madrid:20260915T000000
 DTEND;TZID=Europe/Madrid:20261015T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:71f6152a2434b9c8a49323823004c6c4cdf85531@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:From 15 September to 15 October\, at 7.00 pm\, in Teulada and 
@@ -609,7 +558,7 @@ BEGIN:VEVENT
 SUMMARY:Theatre: Valentes i Positives
 DTSTART;TZID=Europe/Madrid:20261004T190000
 DTEND;TZID=Europe/Madrid:20261004T210000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:7205b4b8e3cf132804c7746cfa4bd1e3bc3d2320@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:SAINETS VALENTES I POSITIVES. Diumenge\,\, 4 d'octubre de 2026
@@ -647,7 +596,7 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🇪🇸 Día de la Comunidad Valenciana
 DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
 DTSTAMP:20260828T174345Z
 UID:77f8399855dd7026cd9949148f38f4f74dc6d2f0@moraira-calendar
 CATEGORIES:Fiesta & traditie
@@ -726,7 +675,7 @@ BEGIN:VEVENT
 SUMMARY:Opera: the Magic Flute
 DTSTART;TZID=Europe/Madrid:20261016T000000
 DTEND;TZID=Europe/Madrid:20261016T020000
-DTSTAMP:20260909T112431Z
+DTSTAMP:20261007T132512Z
 UID:8c6a5b7f0e8943c47ebf710017a6c91d072f5331@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:Friday 16 October 2026 at 7.00 pm at the Teulada Moraira Audit
@@ -751,7 +700,7 @@ BEGIN:VEVENT
 SUMMARY:The Musical by Alicia en el Barco de las Maravillas
 DTSTART;TZID=Europe/Madrid:20261011T000000
 DTEND;TZID=Europe/Madrid:20261011T020000
-DTSTAMP:20260909T112431Z
+DTSTAMP:20261007T132512Z
 UID:975f3620d43248bce7765aba8f38cc807ba67fbd@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:Alicia en el barco de las maravillas Domingo\, 11 de octubre. 
@@ -765,7 +714,7 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🛍️ Tu Comercio en la Calle
 DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
 DTSTAMP:20260826T100737Z
 UID:991a8d8745e44d61471e04c6ac05d7b92c426644@moraira-calendar
 CATEGORIES:Markt & winkelen
@@ -774,18 +723,15 @@ TRANSP:TRANSPARENT
 URL:https://info-teulada-moraira.com/nl/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Concierto Inmersivo: Colores del Sonido
-DTSTART;TZID=Europe/Madrid:20260919T200000
-DTEND;TZID=Europe/Madrid:20260919T220000
-DTSTAMP:20260930T123543Z
-UID:99e56e9bda4f3286ac4683ce56dead1fa517c688@moraira-calendar
+SUMMARY:Concierto Santa Cecília Banda CAM Xàbia
+DTSTART;TZID=Europe/Madrid:20261121T000000
+DTEND;TZID=Europe/Madrid:20261121T020000
+DTSTAMP:20261007T132512Z
+UID:9994d6e8dfc946d72bcd8f7a4b7cc6bbd2f0e515@moraira-calendar
 CATEGORIES:Muziek
-DESCRIPTION:CONCIERTO INMERSIVO: COLORES DEL SONIDO. Sábado 19 septiembre
-  20h
-LOCATION:Auditori Teulada Moraira
+LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
- esdev&idEsdev=606
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Oktoberfest 2026
@@ -810,6 +756,21 @@ CATEGORIES:Muziek
 LOCATION:Saxo Disco Garden\, Moraira
 TRANSP:TRANSPARENT
 URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Comedy Show: la Persona No Descansa by Eugeni Alemany
+DTSTART;TZID=Europe/Madrid:20261024T000000
+DTEND;TZID=Europe/Madrid:20261024T020000
+DTSTAMP:20261007T132512Z
+UID:9cc1c18833eb6810fd2d41d3a07d371b2fb2fa53@moraira-calendar
+CATEGORIES:Theater & film
+DESCRIPTION:Saturday 24 October at 7.00 pm\, at the Auditori Teulada Morai
+ ra
+LOCATION:Auditori Teulada Moraira
+TRANSP:TRANSPARENT
+URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
+ esdeveniments_coconut&idEsdev=2030&title=comedy-show-la-persona-no-descans
+ a-by-eugeni-alemany&lang=4
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Cocinamos dulces terrorificos en PlayJove
@@ -841,7 +802,7 @@ BEGIN:VEVENT
 SUMMARY:Concierto Inmersivo: Máquina del Tiempo
 DTSTART;TZID=Europe/Madrid:20260926T200000
 DTEND;TZID=Europe/Madrid:20260926T220000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:9f9f0334680f9b81878665b30481e7dfb9d19386@moraira-calendar
 CATEGORIES:Muziek
 DESCRIPTION:CONCIERTO INMERSIVO: MÁQUINA DEL TIEMPO\, Sábado 26\, de sep
@@ -850,6 +811,17 @@ LOCATION:Auditori Teulada Moraira
 TRANSP:TRANSPARENT
 URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
  esdev&idEsdev=607
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cuentacuentos y taller infantil: Una de lladres!
+DTSTART;TZID=Europe/Madrid:20261113T000000
+DTEND;TZID=Europe/Madrid:20261113T020000
+DTSTAMP:20261007T132512Z
+UID:a0549d95325dfed19115848a9e4fa93c5b8c419c@moraira-calendar
+CATEGORIES:Familie
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Teatro de marionetas y animación con arena: "Un planeta anomenat 
@@ -864,15 +836,15 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎭 Teatro Un marido ideal. · Xàbia
-DTSTART;TZID=Europe/Madrid:20260919T000000
-DTEND;TZID=Europe/Madrid:20260919T020000
-DTSTAMP:20260829T180535Z
-UID:a91ab29fbe911a0321b58d387769790d4a530048@moraira-calendar
-CATEGORIES:Theater & film
+SUMMARY:Estrategias de disciplina positiva
+DTSTART;TZID=Europe/Madrid:20261124T000000
+DTEND;TZID=Europe/Madrid:20261124T020000
+DTSTAMP:20261007T132512Z
+UID:ae5cf18672faab3900de2f13dbcb5b4b15d8d91d@moraira-calendar
+CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Largometraje documental Del Montgó a Manhattan. Cent anys de somn
@@ -887,19 +859,16 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-02
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:First Wine Tourism Event "temps de Moscatell"
-DTSTART;TZID=Europe/Madrid:20260916T000000
-DTEND;TZID=Europe/Madrid:20260916T020000
-DTSTAMP:20260916T113534Z
-UID:affb7e95855eb627dac4500afd957d5751973cbe@moraira-calendar
-CATEGORIES:Gastronomie & wijn
-DESCRIPTION:Wednesday 16 September\, at 7.00 pm\, at the Riurau del Bancal
-  Roig. Teulada
-LOCATION:Teulada
+SUMMARY:Acto institucional conmemoración 25 de noviembre\, Día Internaci
+ onal de la Eliminación de la Violencia contra la Mujer
+DTSTART;TZID=Europe/Madrid:20261125T000000
+DTEND;TZID=Europe/Madrid:20261125T020000
+DTSTAMP:20261007T132512Z
+UID:af93e89b4312125d2fb3244053fdddf4df5dfbe3@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2073&title=first-wine-tourism-event-temps-de
- -moscatell&lang=4
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🎵 The Tongue (Rolling Stones)
@@ -928,7 +897,7 @@ SUMMARY:Exhibition: Mediterranean Roots\, from the Submerged Forest to the
   Countryside
 DTSTART;TZID=Europe/Madrid:20260828T000000
 DTEND;TZID=Europe/Madrid:20261011T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:b88cf1589edb4469960a3c70232c2913fd975ffc@moraira-calendar
 CATEGORIES:Kunst & cultuur
 DESCRIPTION:Opening Friday\, August 28\, at 8:00 p.m. at the Auditori Teul
@@ -953,25 +922,13 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🍺 Oktoberfest Moraira
 DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
 DTSTAMP:20260828T174345Z
 UID:bdada4923efe0cd1fb47aa18e48d7113823a6c9d@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Parking Les Sorts\, Moraira
 TRANSP:TRANSPARENT
 URL:https://info-teulada-moraira.com/nl/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Presentación de los libros: Jo am\, Si s’han tonat tan magres l
- es paraules i Llengua de fang\, de Mercé Estrela Tena
-DTSTART;TZID=Europe/Madrid:20260917T000000
-DTEND;TZID=Europe/Madrid:20260917T020000
-DTSTAMP:20260829T180535Z
-UID:c1c082df8b97c0580c8151e7c2b084b93d16314e@moraira-calendar
-CATEGORIES:Kunst & cultuur
-LOCATION:Xàbia
-TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Feria de Artesanía de Autor®
@@ -999,7 +956,7 @@ BEGIN:VEVENT
 SUMMARY:"Retratos en tiempos de SMS" de Daniel Sánchez
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:c6670e13bb8ab6464d5a940c03593ea53d2e4aa3@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -1010,9 +967,9 @@ BEGIN:VEVENT
 SUMMARY:22nd Moraira Urban Mile
 DTSTART;TZID=Europe/Madrid:20261010T000000
 DTEND;TZID=Europe/Madrid:20261010T020000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:c99f4aaa8bd0fb45796e4ec2be926abc9662f606@moraira-calendar
-CATEGORIES:Sport & buiten
+CATEGORIES:Overig
 DESCRIPTION:Saturday 10 October\, at 5.30 pm\, on Avenida de la Paz. Morai
  ra
 LOCATION:Moraira
@@ -1032,20 +989,9 @@ TRANSP:TRANSPARENT
 URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎵 Moonshine Duo
-DTSTART;TZID=Europe/Madrid:20260920T160000
-DTEND;TZID=Europe/Madrid:20260920T180000
-DTSTAMP:20260826T100737Z
-UID:cb31e55fabe8fc387c8176a3a2c11644fa5c883b@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Saxo Disco Garden\, Moraira
-TRANSP:TRANSPARENT
-URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:🗿 ALMA 2026 – Internationale monumentale sculptuur
 DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
 DTSTAMP:20260828T174345Z
 UID:cdd9e3e776c74da429a3e0ed4a952ed8db3dedaf@moraira-calendar
 CATEGORIES:Kunst & cultuur
@@ -1068,7 +1014,7 @@ BEGIN:VEVENT
 SUMMARY:EL CASCANUECES -International Ballet Company
 DTSTART;TZID=Europe/Madrid:20261219T180000
 DTEND;TZID=Europe/Madrid:20261219T200000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:d095ff9e39bdeb47d1dba2b47dbb8959bd1aa62b@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:EL CASCANUECES -International Ballet Company. Sábado 19 dicie
@@ -1082,7 +1028,7 @@ BEGIN:VEVENT
 SUMMARY:"Todo nos vendrá del mar" de Baltasar López
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:d26e9b53c717d8f9c014d7d6a869fc446a2df8f3@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -1093,7 +1039,7 @@ BEGIN:VEVENT
 SUMMARY:EL CORSARIO Ballet de Kiev
 DTSTART;TZID=Europe/Madrid:20270213T190000
 DTEND;TZID=Europe/Madrid:20270213T210000
-DTSTAMP:20260930T123543Z
+DTSTAMP:20261007T132512Z
 UID:d7014896479dde0ce164eaa0e1781ecfbbe4e3ed@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:EL CORSARIO Ballet de Kiev 13 de febrero 19h.
@@ -1103,15 +1049,15 @@ URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
  esdev&idEsdev=605
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:👑 Verkiezing Festivalkoninginnen PX’27
-DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260922
-DTSTAMP:20260826T100737Z
-UID:d7d2cb887365a7ed5692dc7af79ccd2b07f23a0a@moraira-calendar
+SUMMARY:Riurau Dansa Film Festival
+DTSTART;TZID=Europe/Madrid:20261120T000000
+DTEND;TZID=Europe/Madrid:20261120T020000
+DTSTAMP:20261007T132512Z
+UID:dbc4b3e994f15c9a59ac0717f80d258bf4257bc5@moraira-calendar
 CATEGORIES:Fiesta & traditie
-LOCATION:Plaça Rei Jaume I\, Benissa
+LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://www.benissa.es/nl/categoria-agenda/eventos-en/
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:VI Marcha contra el Cáncer Xàbia
@@ -1136,6 +1082,17 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-26
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Baby Story Time in Xàbia: The Adventure!
+DTSTART;TZID=Europe/Madrid:20261102T000000
+DTEND;TZID=Europe/Madrid:20261102T020000
+DTSTAMP:20261007T132512Z
+UID:e0d745c28ea2511a017e8cbbe66003f642b9d5a9@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Acte institucional 9 de octubre.
 DTSTART;TZID=Europe/Madrid:20261009T000000
 DTEND;TZID=Europe/Madrid:20261009T020000
@@ -1145,6 +1102,17 @@ CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-02
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concierto Santa Cecília Orquesta CAM Xàbia.
+DTSTART;TZID=Europe/Madrid:20261114T000000
+DTEND;TZID=Europe/Madrid:20261114T020000
+DTSTAMP:20261007T132512Z
+UID:e9e490f5d5db372e35afd771af5f54343450e611@moraira-calendar
+CATEGORIES:Muziek
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Torneo futbol 3x3 en PlayJove
@@ -1178,17 +1146,6 @@ CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-09-23
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎵 Tribute to Camilo Sesto
-DTSTART;TZID=Europe/Madrid:20260920T220000
-DTEND;TZID=Europe/Madrid:20260921T000000
-DTSTAMP:20260826T100737Z
-UID:ef87f12c428e38bf7f2e37676801bdd4f383a12e@moraira-calendar
-CATEGORIES:Muziek
-LOCATION:Centre d'Art Taller Ivars\, Benissa
-TRANSP:TRANSPARENT
-URL:https://www.benissa.es/nl/agenda/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Intercambio Grup Danses Portitxol de Xàbia con Es Xacoters de For
@@ -1225,16 +1182,15 @@ TRANSP:TRANSPARENT
 URL:https://www.moraira.info/nl/evenementen/saxo-disco-garden/#termine
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:II Desafío “100 Paladas Solidarias SUMA contra el Cáncer de Ma
- ma – Desafíos SUMA por la Igualdad”
-DTSTART;TZID=Europe/Madrid:20260920T000000
-DTEND;TZID=Europe/Madrid:20260920T020000
-DTSTAMP:20260829T180535Z
-UID:f6e4ca79221427f12f552283701fbefaeb0b8b01@moraira-calendar
-CATEGORIES:Sport & buiten
+SUMMARY:Concierto Santa Cecília Orquestra y Banda Joven CAM Xàbia
+DTSTART;TZID=Europe/Madrid:20261113T000000
+DTEND;TZID=Europe/Madrid:20261113T020000
+DTSTAMP:20261007T132512Z
+UID:f9a18279398ae07108546b6f87a9acb8e87924a8@moraira-calendar
+CATEGORIES:Muziek
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-08-28
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Actividad familiar de limpieza de cajas nido
