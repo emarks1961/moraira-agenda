@@ -43,7 +43,7 @@ BEGIN:VEVENT
 SUMMARY:Santa Cecília 2026
 DTSTART;TZID=Europe/Madrid:20261114T000000
 DTEND;TZID=Europe/Madrid:20261114T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:071f03b6668552e5a6c84e11caf396f7319c341c@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:Santa Cecília 2026. Del 14 al 21 de noviembre
@@ -56,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:Diciembre en PlayJove: ¡Diseña tu propio cuelga móvil!
 DTSTART;TZID=Europe/Madrid:20261211T000000
 DTEND;TZID=Europe/Madrid:20261211T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:0c3dd459ae3b39f22d78e13dfd895feaa5137b2f@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -67,7 +67,7 @@ BEGIN:VEVENT
 SUMMARY:Navidad en PlayJove: Decoración del arbol de navidad
 DTSTART;TZID=Europe/Madrid:20261218T000000
 DTEND;TZID=Europe/Madrid:20261218T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:0dd5f463c29d654ef879c0d72583bae567e6301f@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -90,7 +90,7 @@ BEGIN:VEVENT
 SUMMARY:Film Music: John Williams & Hans Zimmer
 DTSTART;TZID=Europe/Madrid:20270124T000000
 DTEND;TZID=Europe/Madrid:20270124T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:1749c881f2ed3d64411211c38d3aa1e855c3ebbe@moraira-calendar
 CATEGORIES:Muziek
 DESCRIPTION:JOHN WILLIAMS & HANS ZIMMER Domingo\, 24 de enero de 2027 en 1
@@ -106,7 +106,7 @@ SUMMARY:Presentación del libro: Fuera de tiempo y lugar de Eduardo Bellve
  r Alberola
 DTSTART;TZID=Europe/Madrid:20261210T000000
 DTEND;TZID=Europe/Madrid:20261210T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:1b6c564220046d1c8db4570e10c9598bfb27a0d7@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -129,7 +129,7 @@ SUMMARY:Travelling and Interactive Exhibition: the Birds of the Marina Alt
  a
 DTSTART;TZID=Europe/Madrid:20261112T000000
 DTEND;TZID=Europe/Madrid:20261201T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:208f80b6ea503d84fba16a9e2b8e8ba0e72b6bc5@moraira-calendar
 CATEGORIES:Kunst & cultuur
 DESCRIPTION:From 12 November to 1 December\, at the Espai La Senieta in Mo
@@ -155,7 +155,7 @@ BEGIN:VEVENT
 SUMMARY:Shado Magic Show - Cleptómago
 DTSTART;TZID=Europe/Madrid:20270109T000000
 DTEND;TZID=Europe/Madrid:20270109T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:25ac53c8056cb1868badc9fcbccaf377af9df5b0@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:Saturday 9 January\, at 8.30 pm\, at the Auditori Teulada Mora
@@ -169,7 +169,7 @@ BEGIN:VEVENT
 SUMMARY:Pasacalle de Navidad Orquestra y Banda Joven CAM
 DTSTART;TZID=Europe/Madrid:20261212T000000
 DTEND;TZID=Europe/Madrid:20261212T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:298f490915120040e065e1913d203bdabf50a8c7@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -180,7 +180,7 @@ BEGIN:VEVENT
 SUMMARY:Malu Quince Tour
 DTSTART;TZID=Europe/Madrid:20270129T210000
 DTEND;TZID=Europe/Madrid:20270129T230000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:2b4381b4ff31de8a202800e4c8dfb627dce72df2@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:MALU QUINCE TOUR Viernes\, 29 de enero 21h
@@ -190,38 +190,10 @@ URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
  esdev&idEsdev=621
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Moors and Christians\, Moraira \, Mid-year Festival
-DTSTART;TZID=Europe/Madrid:20261106T000000
-DTEND;TZID=Europe/Madrid:20261107T000000
-DTSTAMP:20261104T152656Z
-UID:2bd75f846d3e2d3fc3960414d128ed36a0cd4406@moraira-calendar
-CATEGORIES:Sport & buiten
-DESCRIPTION:6 and 7 November at the Les Sorts Sports Centre
-LOCATION:Moraira
-TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2096&title=moors-and-christians-moraira-mid-
- year-festival&lang=4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:10th Regional Alzheimer's Conference of the Valencian Community
-DTSTART;TZID=Europe/Madrid:20261107T000000
-DTEND;TZID=Europe/Madrid:20261107T020000
-DTSTAMP:20261104T152656Z
-UID:346ecf01400c51a93c94b4ccfb6dc84970060664@moraira-calendar
-CATEGORIES:Kunst & cultuur
-DESCRIPTION:Saturday 7 November at the Auditori Teulada\, Moraira
-LOCATION:Auditori Teulada Moraira
-TRANSP:TRANSPARENT
-URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
- esdeveniments_coconut&idEsdev=2089&title=10th-regional-alzheimers-conferen
- ce-of-the-valencian-community&lang=4
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Conferencia Alex Txicon. Himalaia Invernal.
 DTSTART;TZID=Europe/Madrid:20261211T000000
 DTEND;TZID=Europe/Madrid:20261211T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:360d1b2de946f14f074d2b1ce2e5488db615069d@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -257,7 +229,7 @@ BEGIN:VEVENT
 SUMMARY:Christmas Market
 DTSTART;TZID=Europe/Madrid:20261219T000000
 DTEND;TZID=Europe/Madrid:20261220T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:3bd02948ebb67cdf97ee1f640daed353b84ca41d@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:Saturday 19 and Sunday 20 December in the Plaza de la Constitu
@@ -282,7 +254,7 @@ BEGIN:VEVENT
 SUMMARY:Experiencia de Apiturismo
 DTSTART;TZID=Europe/Madrid:20261213T000000
 DTEND;TZID=Europe/Madrid:20261213T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:44e567cdad9d8f9886a187852b9d6c9314ef1903@moraira-calendar
 CATEGORIES:Gastronomie & wijn
 LOCATION:Xàbia
@@ -301,6 +273,17 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Mig Any Fogueres de Sant Joan
+DTSTART;TZID=Europe/Madrid:20261219T000000
+DTEND;TZID=Europe/Madrid:20261219T020000
+DTSTAMP:20261125T175816Z
+UID:4babb968e1f1fe7fbcb2c81218a0293586de1d93@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Festival de Fotografía "Ojos Rojos"
 DTSTART;TZID=Europe/Madrid:20261023T000000
 DTEND;TZID=Europe/Madrid:20261129T000000
@@ -315,7 +298,7 @@ BEGIN:VEVENT
 SUMMARY:Pasacalle de Navidad de la escuela de Xirimitab's
 DTSTART;TZID=Europe/Madrid:20261219T000000
 DTEND;TZID=Europe/Madrid:20261219T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:531fb030361a56e99fb7223faff62d95049cb91d@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -323,10 +306,22 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-04
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Presentación del III Premi d'Investigació Vila de Xàbia: Xàbia
+  medieval. Veïns i documents de Josep Andrés
+DTSTART;TZID=Europe/Madrid:20261216T000000
+DTEND;TZID=Europe/Madrid:20261216T020000
+DTSTAMP:20261125T175816Z
+UID:542bf24d26511cf98b4e6e490de5126680606834@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Johann Strauss - Gran Concierto de Año Nuevo
 DTSTART;TZID=Europe/Madrid:20270108T000000
 DTEND;TZID=Europe/Madrid:20270108T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:57b1771a704e93bff6245f2d3616feb81489f2ae@moraira-calendar
 CATEGORIES:Muziek
 DESCRIPTION:JOHANN STRAUSS - GRAN CONCIERTO DE AÑO NUEVO Viernes\, 8 de e
@@ -335,6 +330,17 @@ LOCATION:Auditori Teulada Moraira
 TRANSP:TRANSPARENT
 URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
  esdev&idEsdev=624
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fiestas de Santa Llúcia
+DTSTART;TZID=Europe/Madrid:20261213T000000
+DTEND;TZID=Europe/Madrid:20261213T020000
+DTSTAMP:20261125T175816Z
+UID:57e113e60edb2f6668691284bc15baf1631b542d@moraira-calendar
+CATEGORIES:Fiesta & traditie
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Concierto Santa Cecília Orquesta y Banda Joven CAM Xàbia.
@@ -351,7 +357,7 @@ BEGIN:VEVENT
 SUMMARY:NADAL JOVE I ESPORTIU 2026
 DTSTART;TZID=Europe/Madrid:20261228T000000
 DTEND;TZID=Europe/Madrid:20261229T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:5aacdbe4dbc23c5add9fcd2739d5486bd19fc3f8@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Xàbia
@@ -362,7 +368,7 @@ BEGIN:VEVENT
 SUMMARY:Presentación del libro: Plom i formigó de Arnau Castell Alemany
 DTSTART;TZID=Europe/Madrid:20261219T000000
 DTEND;TZID=Europe/Madrid:20261219T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:5b3caaf55b7b36f89f7d70b0bcff95e2992f0fb7@moraira-calendar
 CATEGORIES:Fiesta & traditie
 LOCATION:Xàbia
@@ -373,7 +379,7 @@ BEGIN:VEVENT
 SUMMARY:"Miradas encontradas" de Ernesto García Lledó
 DTSTART;TZID=Europe/Madrid:20261204T000000
 DTEND;TZID=Europe/Madrid:20270110T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:5e197e68b6c61c195a39c0e6c1b472c2857d8572@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -381,10 +387,21 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-04
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Feria navideña "Artesanía de autor®"
+DTSTART;TZID=Europe/Madrid:20261205T000000
+DTEND;TZID=Europe/Madrid:20261206T000000
+DTSTAMP:20261125T175816Z
+UID:61dd8013fe31d012b09c86b3a27447a733ca7699@moraira-calendar
+CATEGORIES:Markt & winkelen
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:"De tierra y Piel" de Antonio M-Cattáneo
 DTSTART;TZID=Europe/Madrid:20261204T000000
 DTEND;TZID=Europe/Madrid:20270110T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:62b5edfde729c47d337e4d03ddbccf30feb61b4a@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -426,17 +443,6 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:XI Festival Xàbia Negra
-DTSTART;TZID=Europe/Madrid:20261106T000000
-DTEND;TZID=Europe/Madrid:20261108T000000
-DTSTAMP:20261028T140136Z
-UID:6c12cd82e137ba24f645cb27dbb599fa3e8e4287@moraira-calendar
-CATEGORIES:Overig
-LOCATION:Xàbia
-TRANSP:TRANSPARENT
-URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Excursión y visita a la Cova del Barranc de Migdia con motivo del
   Día Europeo del Arte Rupestre
 DTSTART;TZID=Europe/Madrid:20261115T000000
@@ -452,7 +458,7 @@ BEGIN:VEVENT
 SUMMARY:Diciembre en Playjove: Crea decoración navideña con foami
 DTSTART;TZID=Europe/Madrid:20261204T000000
 DTEND;TZID=Europe/Madrid:20261204T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:6d623309b3b479a945ba0ff021997844925d51f8@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -487,7 +493,7 @@ BEGIN:VEVENT
 SUMMARY:En un Minuto
 DTSTART;TZID=Europe/Madrid:20261115T190000
 DTEND;TZID=Europe/Madrid:20261115T210000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:6e0430ed3ddde33083906a608de67828608b7eb4@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:EN UN MINUTO Domingo\, 15 de noviembre. 19h.
@@ -500,7 +506,7 @@ BEGIN:VEVENT
 SUMMARY:Concurso de bandas "Arenal Blues Way"
 DTSTART;TZID=Europe/Madrid:20261204T000000
 DTEND;TZID=Europe/Madrid:20261205T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:7208a4ce13c55fc83b7d3eb9615a6ccaa5219cc7@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -522,7 +528,7 @@ BEGIN:VEVENT
 SUMMARY:Concierto "Ha arribat el Nadal" Grup de Danses Portitxol.
 DTSTART;TZID=Europe/Madrid:20261213T000000
 DTEND;TZID=Europe/Madrid:20261213T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:7becbd9a896cae65f373707720307a6cadf6fda3@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Xàbia
@@ -533,7 +539,7 @@ BEGIN:VEVENT
 SUMMARY:Belén Hebreo en el Museo de Xàbia
 DTSTART;TZID=Europe/Madrid:20261211T000000
 DTEND;TZID=Europe/Madrid:20270106T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:8376dd64820822a53c602ac480c238bdd0c22e59@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -557,7 +563,7 @@ SUMMARY:Xàbia conmemora el Día Internacional de las Personas con Diversi
  dad Funcional
 DTSTART;TZID=Europe/Madrid:20261130T000000
 DTEND;TZID=Europe/Madrid:20261203T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:88188bfcb9e77c4adc7114c2658dc0439f962243@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -568,7 +574,7 @@ BEGIN:VEVENT
 SUMMARY:Concierto Clásica Inmersiva
 DTSTART;TZID=Europe/Madrid:20261129T200000
 DTEND;TZID=Europe/Madrid:20261129T220000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:8d2569834842bb2568e20c51b629a60300be4f00@moraira-calendar
 CATEGORIES:Muziek
 DESCRIPTION:CONCIERTO CLÁSICA INMERSIVA 29 de Noviembre de 2026 20:00h
@@ -582,7 +588,7 @@ SUMMARY:Presentación del libro Escapando del túnel de Rafael Andarias y
  M. Francisca Buigues
 DTSTART;TZID=Europe/Madrid:20261204T000000
 DTEND;TZID=Europe/Madrid:20261204T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:9468b2c33bed933fe9d3223f81a237b8f1e75a03@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -593,26 +599,12 @@ BEGIN:VEVENT
 SUMMARY:Concierto Navidad Grup Polifònic Ars Nova.
 DTSTART;TZID=Europe/Madrid:20261220T000000
 DTEND;TZID=Europe/Madrid:20261220T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:9637127649f24eec87a02b2657c8f84c05746daf@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-04
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:X Congreso Autonómico de Alzheimer de la Comunitat Valenciana
-DTSTART;TZID=Europe/Madrid:20261107T000000
-DTEND;TZID=Europe/Madrid:20261107T020000
-DTSTAMP:20261118T162749Z
-UID:996f81826a8eeb69a58fe6427376d9fde2229387@moraira-calendar
-CATEGORIES:Overig
-DESCRIPTION:X Congreso Autonómico de Alzheimer de la Comunitat Valenciana
- . 7 de noviembre
-LOCATION:Auditori Teulada Moraira
-TRANSP:TRANSPARENT
-URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
- esdev&idEsdev=626
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Concierto Santa Cecília Banda CAM Xàbia
@@ -624,6 +616,18 @@ CATEGORIES:Muziek
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-07
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sesión Club de Lectura en Valencià: La nit de les papallones de 
+ Jordi Coca
+DTSTART;TZID=Europe/Madrid:20261221T000000
+DTEND;TZID=Europe/Madrid:20261221T020000
+DTSTAMP:20261125T175816Z
+UID:9c44729f8dd3a4de932f4878afee0c466014d7fd@moraira-calendar
+CATEGORIES:Kunst & cultuur
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Cuentacuentos y taller infantil: Una de lladres!
@@ -640,7 +644,7 @@ BEGIN:VEVENT
 SUMMARY:Navidad en PlayJove: Desafía la gravedad
 DTSTART;TZID=Europe/Madrid:20261222T000000
 DTEND;TZID=Europe/Madrid:20261222T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:a8df5e8ec180a3d50d179d7c19a7323b5735c876@moraira-calendar
 CATEGORIES:Sport & buiten
 LOCATION:Xàbia
@@ -652,7 +656,7 @@ SUMMARY:Recital de piano del maestro Luis Agius España dentro de un piano
  .
 DTSTART;TZID=Europe/Madrid:20261212T000000
 DTEND;TZID=Europe/Madrid:20261212T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:a942e87cd02eb314dea170190de21db827c77816@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
@@ -663,7 +667,7 @@ BEGIN:VEVENT
 SUMMARY:Concierto jazz Enric Peidro Quartet
 DTSTART;TZID=Europe/Madrid:20261205T000000
 DTEND;TZID=Europe/Madrid:20261205T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:add6eedc802a94e33a5d73123735e326688397e7@moraira-calendar
 CATEGORIES:Muziek
 LOCATION:Xàbia
@@ -698,7 +702,7 @@ SUMMARY:Concierto Santa Cecilia Societat Lírica i Musical de Benissa VIUR
  E
 DTSTART;TZID=Europe/Madrid:20261128T190000
 DTEND;TZID=Europe/Madrid:20261128T210000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:b93d38320f0433d78de79892dde36b3877732f60@moraira-calendar
 CATEGORIES:Muziek
 DESCRIPTION:Concierto Santa Cecilia Societat Lírica i Musical de Benissa 
@@ -712,7 +716,7 @@ BEGIN:VEVENT
 SUMMARY:Un Momento en el Tiempo / A Point in Time
 DTSTART;TZID=Europe/Madrid:20261116T000000
 DTEND;TZID=Europe/Madrid:20261231T000000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:bcb96edb3cc10e4b36e80fe111f472d574085856@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -723,7 +727,7 @@ BEGIN:VEVENT
 SUMMARY:Pasacalle de Navidad de la escuela de Xirimitab's
 DTSTART;TZID=Europe/Madrid:20261218T000000
 DTEND;TZID=Europe/Madrid:20261218T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:bcb9aa1eb7b98b88c6cbcec2d72ea597eded17c8@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -740,6 +744,21 @@ CATEGORIES:Overig
 LOCATION:Xàbia
 TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-10-21
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25n International Day for the Elimination of Violence Against Wome
+ n
+DTSTART;TZID=Europe/Madrid:20261125T000000
+DTEND;TZID=Europe/Madrid:20261125T020000
+DTSTAMP:20261125T175816Z
+UID:c064f99dc288744c87e08f6a2416a493194eb18b@moraira-calendar
+CATEGORIES:Overig
+DESCRIPTION:Wednesday 25 November\, at 11.30 am\, in Teulada
+LOCATION:Teulada
+TRANSP:TRANSPARENT
+URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
+ esdeveniments_coconut&idEsdev=2108&title=25n-international-day-for-the-eli
+ mination-of-violence-against-women&lang=4
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:"Retratos en tiempos de SMS" de Daniel Sánchez
@@ -785,7 +804,7 @@ BEGIN:VEVENT
 SUMMARY:EL CASCANUECES -International Ballet Company
 DTSTART;TZID=Europe/Madrid:20261219T180000
 DTEND;TZID=Europe/Madrid:20261219T200000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:d095ff9e39bdeb47d1dba2b47dbb8959bd1aa62b@moraira-calendar
 CATEGORIES:Theater & film
 DESCRIPTION:EL CASCANUECES -International Ballet Company. Sábado 19 dicie
@@ -821,7 +840,7 @@ BEGIN:VEVENT
 SUMMARY:Diciembre a PlayJove: ¿Le gusto? ¿Me gusta? ¿Estamos saliendo?
 DTSTART;TZID=Europe/Madrid:20261211T000000
 DTEND;TZID=Europe/Madrid:20261211T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:e3664d3dcafdf11a280f2eb3f69f985f6dff769b@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -832,7 +851,7 @@ BEGIN:VEVENT
 SUMMARY:Navidad en PlayJove: Monta tu puzzle 3D
 DTSTART;TZID=Europe/Madrid:20261230T000000
 DTEND;TZID=Europe/Madrid:20261230T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:ed8305565955778cad19a272d51eb30ce374312c@moraira-calendar
 CATEGORIES:Overig
 LOCATION:Xàbia
@@ -840,10 +859,36 @@ TRANSP:TRANSPARENT
 URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-04
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Santa Catalina Festivities 2026
+DTSTART;TZID=Europe/Madrid:20261127T000000
+DTEND;TZID=Europe/Madrid:20261129T000000
+DTSTAMP:20261125T175816Z
+UID:f19c634f3dcf0d6bd3017d048768067657470c4c@moraira-calendar
+CATEGORIES:Fiesta & traditie
+DESCRIPTION:27?29 November\, in Teulada
+LOCATION:Teulada
+TRANSP:TRANSPARENT
+URL:https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=
+ esdeveniments_coconut&idEsdev=2109&title=santa-catalina-festivities-2026&l
+ ang=4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Acto institucional conmemoración 25 de noviembre\, Día Internaci
+ onal de la Eliminación de la Violencia contra la Mujer
+DTSTART;TZID=Europe/Madrid:20261202T000000
+DTEND;TZID=Europe/Madrid:20261202T020000
+DTSTAMP:20261125T175816Z
+UID:f3e8966c732ae0ab1c196ec6b935e1c964b52838@moraira-calendar
+CATEGORIES:Overig
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Alabama Gospel Choir Auditori Teulada Moraira
 DTSTART;TZID=Europe/Madrid:20261227T000000
 DTEND;TZID=Europe/Madrid:20261227T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:f41c7a86e24801491a6e72434c1c29b0eb04c01a@moraira-calendar
 CATEGORIES:Overig
 DESCRIPTION:ALABAMA GOSPEL CHOIR AUDITORI TEULADA MORAIRA Domingo\, 27 de 
@@ -852,6 +897,17 @@ LOCATION:Auditori Teulada Moraira
 TRANSP:TRANSPARENT
 URL:https://www.auditoriteuladamoraira.es/atm/web_php/index.php?contenido=
  esdev&idEsdev=623
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Feria navideña "Artesanía de autor®"
+DTSTART;TZID=Europe/Madrid:20261204T000000
+DTEND;TZID=Europe/Madrid:20261204T020000
+DTSTAMP:20261125T175816Z
+UID:f8ef1f9a92683e7b1e7be882578418df27673d03@moraira-calendar
+CATEGORIES:Markt & winkelen
+LOCATION:Xàbia
+TRANSP:TRANSPARENT
+URL:https://en.xabia.org/agendas/ver/1075/1/2026-11-25
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Concierto Santa Cecília Orquestra y Banda Joven CAM Xàbia
@@ -869,7 +925,7 @@ SUMMARY:La magia de la lectura con Mágica-Majo: sesiones de lectura\, val
  ores y talleres creativos.
 DTSTART;TZID=Europe/Madrid:20261211T000000
 DTEND;TZID=Europe/Madrid:20261211T020000
-DTSTAMP:20261118T162749Z
+DTSTAMP:20261125T175816Z
 UID:fb9340675282a30224f98a1d560915050bf4cf5a@moraira-calendar
 CATEGORIES:Kunst & cultuur
 LOCATION:Xàbia
